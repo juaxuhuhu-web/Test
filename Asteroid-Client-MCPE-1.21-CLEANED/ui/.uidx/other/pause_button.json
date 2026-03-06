@@ -13,10 +13,10 @@
 },
 
 
-"asteroid_section_toggle_size@common_toggles.light_ui_toggle": {
+"wolfclientmod_section_toggle_size@common_toggles.light_ui_toggle": {
 "size": [ "33%", "100%"],
 "$button_size_override": [ "100%", "100% + 1px" ],
-"$button_type_panel": "pausett.asteroid_toggle_control_section_size",
+"$button_type_panel": "pausett.wolfclientmod_toggle_control_section_size",
 
 
 "$default_texture": "textures/ui/button_default",
@@ -35,7 +35,7 @@
 "$toggle_on_hover_binding_name": "#toggle_on_hover"
 },
 
-"asteroid_toggle_control_section_size": {
+"wolfclientmod_toggle_control_section_size": {
 
 "type": "panel",
 "layer": 2,
@@ -51,12 +51,12 @@
 ]
 },
 
-"asteroid_section_toggle_crosshair@common_toggles.light_ui_toggle": {
+"wolfclientmod_section_toggle_crosshair@common_toggles.light_ui_toggle": {
 "anchor_from": "top_left",
 "anchor_to": "top_left",
 "size": [ "100%", "30px" ],
 "$button_size_override": [ "100%", "100% + 1px" ],
-"$button_type_panel": "pausett.asteroid_toggle_control_crosshair",
+"$button_type_panel": "pausett.wolfclientmod_toggle_control_crosshair",
 "$default_texture": "textures/ui/button_default",
 "$hover_texture": "textures/ui/button_hover",
 "$pressed_texture": "textures/ui/button_pressed",
@@ -71,7 +71,7 @@
 "$toggle_on_hover_binding_name": "#toggle_on_hover"
 },
 
-"asteroid_toggle_control_crosshair":{
+"wolfclientmod_toggle_control_crosshair":{
 "type":"panel",
 "controls":[
 {
@@ -89,11 +89,11 @@
 },
 
 
-"asteroid_section_toggle_crosshair_image@common_toggles.light_ui_toggle": {
+"wolfclientmod_section_toggle_crosshair_image@common_toggles.light_ui_toggle": {
 "anchor_from": "top_left",
 "anchor_to": "top_left",
 "$button_size_override": [ "100%", "100% + 1px" ],
-"$button_type_panel": "pausett.asteroid_toggle_control_crosshair_image",
+"$button_type_panel": "pausett.wolfclientmod_toggle_control_crosshair_image",
 
 "$default_texture": "textures/null",
 "$hover_texture": "textures/null",
@@ -112,7 +112,7 @@
 "$toggle_on_hover_binding_name": "#toggle_on_hover"
 },
 
-"asteroid_toggle_control_crosshair_image":{
+"wolfclientmod_toggle_control_crosshair_image":{
 "type":"panel",
 "controls":[
 {
@@ -135,12 +135,12 @@
 
 
 
-"asteroid_section_toggle@common_toggles.light_ui_toggle": {
+"wolfclientmod_section_toggle@common_toggles.light_ui_toggle": {
 "anchor_from": "top_left",
 "anchor_to": "top_left",
 "size": [ "100%", "30px" ],
 "$button_size_override": [ "100%", "100% + 1px" ],
-"$button_type_panel": "pausett.asteroid_toggle_control_section",
+"$button_type_panel": "pausett.wolfclientmod_toggle_control_section",
 
 
 
@@ -162,7 +162,7 @@
 "$toggle_on_hover_binding_name": "#toggle_on_hover"
 },
 
-"asteroid_toggle_control_section": {
+"wolfclientmod_toggle_control_section": {
 "type": "panel",
 "layer": 2,
 "controls": [
@@ -181,19 +181,19 @@
 
 
 
-"toggle_on_asteroid@pausett.asteroid_toggle_image":{
+"toggle_on_wolfclientmod@pausett.wolfclientmod_toggle_image":{
 "$texture":"$on_texture",
 "$t_text":"$show_text"
 },
-"toggle_off_asteroid@pausett.asteroid_toggle_image":{
+"toggle_off_wolfclientmod@pausett.wolfclientmod_toggle_image":{
 "$texture":"$off_texture",
 "$t_text":"$hide_text"
 },
-"toggle_on_to_off_asteroid@pausett.asteroid_toggle_image":{
+"toggle_on_to_off_wolfclientmod@pausett.wolfclientmod_toggle_image":{
 "$texture":"$off_texture",
 "$t_text":"$show_text"
 },
-"toggle_off_to_on_asteroid@pausett.asteroid_toggle_image":{
+"toggle_off_to_on_wolfclientmod@pausett.wolfclientmod_toggle_image":{
 "$texture":"textures/ui/button_hover",
 "$t_text":"$hide_text"
 },
@@ -202,29 +202,29 @@
 
 
 
-"asteroid_button_press@common.toggle":{
-"$checked_control":"pausett.toggle_off_asteroid",
-"$unchecked_control":"pausett.toggle_on_asteroid",
+"wolfclientmod_button_press@common.toggle":{
+"$checked_control":"pausett.toggle_off_wolfclientmod",
+"$unchecked_control":"pausett.toggle_on_wolfclientmod",
 
 
-"$unchecked_locked_control":"pausett.toggle_on_asteroid",
-"$checked_locked_control":"pausett.toggle_off_asteroid",
+"$unchecked_locked_control":"pausett.toggle_on_wolfclientmod",
+"$checked_locked_control":"pausett.toggle_off_wolfclientmod",
 
 
-"$unchecked_locked_hover_control":"pausett.toggle_on_to_off_asteroid",
-"$checked_locked_hover_control":"pausett.toggle_off_to_on_asteroid",
+"$unchecked_locked_hover_control":"pausett.toggle_on_to_off_wolfclientmod",
+"$checked_locked_hover_control":"pausett.toggle_off_to_on_wolfclientmod",
 
-"$unchecked_hover_control":"pausett.toggle_on_to_off_asteroid",
-"$checked_hover_control":"pausett.toggle_off_to_on_asteroid"
+"$unchecked_hover_control":"pausett.toggle_on_to_off_wolfclientmod",
+"$checked_hover_control":"pausett.toggle_off_to_on_wolfclientmod"
 
 },
 
 
 
-"asteroid_toggle_custom":{
+"wolfclientmod_toggle_custom":{
 "type":"panel",
 "$toggle_view_binding_name":"this_toggle",
-"$template_toggle|default":"pausett.asteroid_button_press",
+"$template_toggle|default":"pausett.wolfclientmod_button_press",
 "controls":[
 {
 "$toggle_view_binding_name@$template_toggle":{}
@@ -234,7 +234,7 @@
 
 
 
-"asteroid_toggle_image":{
+"wolfclientmod_toggle_image":{
 "type":"image",
 "texture":"$texture",
 "$default|default":false,
@@ -281,39 +281,39 @@
 
 
 
-"toggle_on_asteroid_center@pausett.asteroid_toggle_image_center":{
+"toggle_on_wolfclientmod_center@pausett.wolfclientmod_toggle_image_center":{
 "$default|default":true,
 "$texture":"$on_texture",
 "$t_text":"$show_text"
 },
-"toggle_off_asteroid_center@pausett.asteroid_toggle_image_center":{
+"toggle_off_wolfclientmod_center@pausett.wolfclientmod_toggle_image_center":{
 "$pressed|default":true,
 "$texture":"$off_texture",
 "$t_text":"$hide_text"
 },
-"toggle_on_to_off_asteroid_center@pausett.asteroid_toggle_image_center":{
+"toggle_on_to_off_wolfclientmod_center@pausett.wolfclientmod_toggle_image_center":{
 "$hover|default":true,
 "$texture":"$on_texture",
 "$t_text":"$show_text"
 },
-"toggle_off_to_on_asteroid_center@pausett.asteroid_toggle_image_center":{
+"toggle_off_to_on_wolfclientmod_center@pausett.wolfclientmod_toggle_image_center":{
 "$hover|default":true,
 "$texture":"$off_texture",
 "$t_text":"$hide_text"
 },
 
-"asteroid_button_press_center@common.toggle":{
-"$unchecked_locked_control|default":"pausett.toggle_on_asteroid_center",
-"$unchecked_locked_hover_control|default":"pausett.toggle_off_asteroid_center",
-"$checked_locked_control|default":"pausett.toggle_off_asteroid_center",
-"$checked_locked_hover_control|default":"pausett.toggle_off_asteroid_center",
-"$unchecked_control|default":"pausett.toggle_on_asteroid_center",
-"$checked_control|default":"pausett.toggle_off_asteroid_center",
-"$unchecked_hover_control|default":"pausett.toggle_on_to_off_asteroid_center",
-"$checked_hover_control|default":"pausett.toggle_off_to_on_asteroid_center"
+"wolfclientmod_button_press_center@common.toggle":{
+"$unchecked_locked_control|default":"pausett.toggle_on_wolfclientmod_center",
+"$unchecked_locked_hover_control|default":"pausett.toggle_off_wolfclientmod_center",
+"$checked_locked_control|default":"pausett.toggle_off_wolfclientmod_center",
+"$checked_locked_hover_control|default":"pausett.toggle_off_wolfclientmod_center",
+"$unchecked_control|default":"pausett.toggle_on_wolfclientmod_center",
+"$checked_control|default":"pausett.toggle_off_wolfclientmod_center",
+"$unchecked_hover_control|default":"pausett.toggle_on_to_off_wolfclientmod_center",
+"$checked_hover_control|default":"pausett.toggle_off_to_on_wolfclientmod_center"
 },
 
-"asteroid_toggle_image_center":{
+"wolfclientmod_toggle_image_center":{
 "type":"image",
 "texture":"$texture",
 "$default|default":false,
@@ -331,10 +331,10 @@
 ]
 },
 
-"asteroid_toggle_custom_center":{
+"wolfclientmod_toggle_custom_center":{
 "type":"panel",
 "$toggle_view_binding_name":"this_toggle",
-"$template_toggle|default":"pausett.asteroid_button_press_center",
+"$template_toggle|default":"pausett.wolfclientmod_button_press_center",
 "controls":[
 {
 "$toggle_view_binding_name@$template_toggle":{}

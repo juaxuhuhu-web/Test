@@ -23,7 +23,7 @@
 }
 },
 {
-"asteroidtext":{
+"wolfclientmodtext":{
 "type":"label",
 "text":"Asteroid",
 "anchor_to":"top_right",

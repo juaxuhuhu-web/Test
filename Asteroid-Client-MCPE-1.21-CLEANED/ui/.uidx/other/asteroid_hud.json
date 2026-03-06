@@ -1,5 +1,5 @@
 {
-"namespace":"asteroid_hud",
+"namespace":"wolfclientmod_hud",
 
 
 
@@ -45,7 +45,7 @@
 "texture":"textures/ui/panel",
 "controls":[
 {
-"asteroidtext":{
+"wolfclientmodtext":{
 "type":"label",
 "text":"client.name",
 "layer":5,
@@ -116,7 +116,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.show.mod.menu",
+"source_control_name":"wolfclientmod.show.mod.menu",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -137,7 +137,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.mod.armor",
+"source_control_name":"wolfclientmod.toggle.mod.armor",
 "source_property_name":"(not #toggle_state)",
 "target_property_name":"#visible"
 }]
@@ -158,7 +158,7 @@
 "offset":[0,2000],
 "bindings":[{
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.mod.direction",
+"source_control_name":"wolfclientmod.toggle.mod.direction",
 "source_property_name":"(not #toggle_state)",
 "target_property_name":"#visible"
 }]
@@ -174,7 +174,7 @@
 "offset":[-2,3001],
 "bindings":[{
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.mod.coordinates",
+"source_control_name":"wolfclientmod.toggle.mod.coordinates",
 "source_property_name":"(not #toggle_state)",
 "target_property_name":"#visible"
 }]
@@ -192,7 +192,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.mod.offhand",
+"source_control_name":"wolfclientmod.toggle.mod.offhand",
 "source_property_name":"(not #toggle_state)",
 "target_property_name":"#visible"
 }
@@ -214,7 +214,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.mod.totem",
+"source_control_name":"wolfclientmod.toggle.mod.totem",
 "source_property_name":"(not #toggle_state)",
 "target_property_name":"#visible"
 }
@@ -234,7 +234,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.mod.potion",
+"source_control_name":"wolfclientmod.toggle.mod.potion",
 "source_property_name":"(not #toggle_state)",
 "target_property_name":"#visible"
 }
@@ -280,7 +280,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.mod.efepese",
+"source_control_name":"wolfclientmod.toggle.mod.efepese",
 "source_property_name":"(not #toggle_state)",
 "target_property_name":"#visible"
 }
@@ -302,7 +302,7 @@
 
 
 
-"asteroid_hud":{
+"wolfclientmod_hud":{
 "type":"panel",
 "size":["100%","100%"],
 "controls":[
@@ -374,7 +374,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.0",
+"source_control_name":"wolfclientmod.toggle.grid.0",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -390,7 +390,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.1",
+"source_control_name":"wolfclientmod.toggle.grid.1",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -406,7 +406,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.2",
+"source_control_name":"wolfclientmod.toggle.grid.2",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -422,7 +422,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.3",
+"source_control_name":"wolfclientmod.toggle.grid.3",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -438,7 +438,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.4",
+"source_control_name":"wolfclientmod.toggle.grid.4",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -454,7 +454,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.5",
+"source_control_name":"wolfclientmod.toggle.grid.5",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -470,7 +470,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.6",
+"source_control_name":"wolfclientmod.toggle.grid.6",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -490,7 +490,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.0x1",
+"source_control_name":"wolfclientmod.toggle.grid.0x1",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -506,7 +506,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.1x1",
+"source_control_name":"wolfclientmod.toggle.grid.1x1",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -522,7 +522,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.2x1",
+"source_control_name":"wolfclientmod.toggle.grid.2x1",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -538,7 +538,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.3x1",
+"source_control_name":"wolfclientmod.toggle.grid.3x1",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -554,7 +554,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.4x1",
+"source_control_name":"wolfclientmod.toggle.grid.4x1",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -570,7 +570,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.5x1",
+"source_control_name":"wolfclientmod.toggle.grid.5x1",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -586,7 +586,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.6x1",
+"source_control_name":"wolfclientmod.toggle.grid.6x1",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -608,7 +608,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.0x2",
+"source_control_name":"wolfclientmod.toggle.grid.0x2",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -624,7 +624,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.1x2",
+"source_control_name":"wolfclientmod.toggle.grid.1x2",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -640,7 +640,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.2x2",
+"source_control_name":"wolfclientmod.toggle.grid.2x2",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -656,7 +656,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.3x2",
+"source_control_name":"wolfclientmod.toggle.grid.3x2",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -672,7 +672,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.4x2",
+"source_control_name":"wolfclientmod.toggle.grid.4x2",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -688,7 +688,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.5x2",
+"source_control_name":"wolfclientmod.toggle.grid.5x2",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -704,7 +704,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.6x2",
+"source_control_name":"wolfclientmod.toggle.grid.6x2",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -724,7 +724,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.0x3",
+"source_control_name":"wolfclientmod.toggle.grid.0x3",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -740,7 +740,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.1x3",
+"source_control_name":"wolfclientmod.toggle.grid.1x3",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -756,7 +756,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.2x3",
+"source_control_name":"wolfclientmod.toggle.grid.2x3",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -772,7 +772,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.3x3",
+"source_control_name":"wolfclientmod.toggle.grid.3x3",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -788,7 +788,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.4x3",
+"source_control_name":"wolfclientmod.toggle.grid.4x3",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -804,7 +804,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.5x3",
+"source_control_name":"wolfclientmod.toggle.grid.5x3",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -820,7 +820,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.6x3",
+"source_control_name":"wolfclientmod.toggle.grid.6x3",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -841,7 +841,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.0x4",
+"source_control_name":"wolfclientmod.toggle.grid.0x4",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -857,7 +857,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.1x4",
+"source_control_name":"wolfclientmod.toggle.grid.1x4",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -873,7 +873,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.2x4",
+"source_control_name":"wolfclientmod.toggle.grid.2x4",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -889,7 +889,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.3x4",
+"source_control_name":"wolfclientmod.toggle.grid.3x4",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -905,7 +905,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.4x4",
+"source_control_name":"wolfclientmod.toggle.grid.4x4",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -921,7 +921,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.5x4",
+"source_control_name":"wolfclientmod.toggle.grid.5x4",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -937,7 +937,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.6x4",
+"source_control_name":"wolfclientmod.toggle.grid.6x4",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -955,7 +955,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.0x5",
+"source_control_name":"wolfclientmod.toggle.grid.0x5",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -971,7 +971,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.1x5",
+"source_control_name":"wolfclientmod.toggle.grid.1x5",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -987,7 +987,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.2x5",
+"source_control_name":"wolfclientmod.toggle.grid.2x5",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -1003,7 +1003,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.3x5",
+"source_control_name":"wolfclientmod.toggle.grid.3x5",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -1019,7 +1019,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.4x5",
+"source_control_name":"wolfclientmod.toggle.grid.4x5",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -1035,7 +1035,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.5x5",
+"source_control_name":"wolfclientmod.toggle.grid.5x5",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -1051,7 +1051,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.6x5",
+"source_control_name":"wolfclientmod.toggle.grid.6x5",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -1071,7 +1071,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.0x6",
+"source_control_name":"wolfclientmod.toggle.grid.0x6",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -1087,7 +1087,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.1x6",
+"source_control_name":"wolfclientmod.toggle.grid.1x6",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -1103,7 +1103,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.2x6",
+"source_control_name":"wolfclientmod.toggle.grid.2x6",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -1119,7 +1119,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.3x6",
+"source_control_name":"wolfclientmod.toggle.grid.3x6",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -1135,7 +1135,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.4x6",
+"source_control_name":"wolfclientmod.toggle.grid.4x6",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -1151,7 +1151,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.5x6",
+"source_control_name":"wolfclientmod.toggle.grid.5x6",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -1167,7 +1167,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.6x6",
+"source_control_name":"wolfclientmod.toggle.grid.6x6",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -1193,7 +1193,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.crosshair.rgb",
+"source_control_name":"wolfclientmod.toggle.crosshair.rgb",
 "source_property_name":"(not #toggle_state)",
 "target_property_name":"#visible"
 }
@@ -1217,7 +1217,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.0",
+"source_control_name":"wolfclientmod.toggle.grid.0",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -1233,7 +1233,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.1",
+"source_control_name":"wolfclientmod.toggle.grid.1",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -1249,7 +1249,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.2",
+"source_control_name":"wolfclientmod.toggle.grid.2",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -1265,7 +1265,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.3",
+"source_control_name":"wolfclientmod.toggle.grid.3",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -1281,7 +1281,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.4",
+"source_control_name":"wolfclientmod.toggle.grid.4",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -1297,7 +1297,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.5",
+"source_control_name":"wolfclientmod.toggle.grid.5",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -1313,7 +1313,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.6",
+"source_control_name":"wolfclientmod.toggle.grid.6",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -1333,7 +1333,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.0x1",
+"source_control_name":"wolfclientmod.toggle.grid.0x1",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -1349,7 +1349,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.1x1",
+"source_control_name":"wolfclientmod.toggle.grid.1x1",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -1365,7 +1365,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.2x1",
+"source_control_name":"wolfclientmod.toggle.grid.2x1",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -1381,7 +1381,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.3x1",
+"source_control_name":"wolfclientmod.toggle.grid.3x1",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -1397,7 +1397,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.4x1",
+"source_control_name":"wolfclientmod.toggle.grid.4x1",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -1413,7 +1413,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.5x1",
+"source_control_name":"wolfclientmod.toggle.grid.5x1",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -1429,7 +1429,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.6x1",
+"source_control_name":"wolfclientmod.toggle.grid.6x1",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -1451,7 +1451,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.0x2",
+"source_control_name":"wolfclientmod.toggle.grid.0x2",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -1467,7 +1467,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.1x2",
+"source_control_name":"wolfclientmod.toggle.grid.1x2",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -1483,7 +1483,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.2x2",
+"source_control_name":"wolfclientmod.toggle.grid.2x2",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -1499,7 +1499,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.3x2",
+"source_control_name":"wolfclientmod.toggle.grid.3x2",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -1515,7 +1515,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.4x2",
+"source_control_name":"wolfclientmod.toggle.grid.4x2",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -1531,7 +1531,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.5x2",
+"source_control_name":"wolfclientmod.toggle.grid.5x2",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -1547,7 +1547,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.6x2",
+"source_control_name":"wolfclientmod.toggle.grid.6x2",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -1567,7 +1567,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.0x3",
+"source_control_name":"wolfclientmod.toggle.grid.0x3",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -1583,7 +1583,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.1x3",
+"source_control_name":"wolfclientmod.toggle.grid.1x3",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -1599,7 +1599,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.2x3",
+"source_control_name":"wolfclientmod.toggle.grid.2x3",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -1615,7 +1615,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.3x3",
+"source_control_name":"wolfclientmod.toggle.grid.3x3",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -1631,7 +1631,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.4x3",
+"source_control_name":"wolfclientmod.toggle.grid.4x3",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -1647,7 +1647,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.5x3",
+"source_control_name":"wolfclientmod.toggle.grid.5x3",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -1663,7 +1663,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.6x3",
+"source_control_name":"wolfclientmod.toggle.grid.6x3",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -1684,7 +1684,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.0x4",
+"source_control_name":"wolfclientmod.toggle.grid.0x4",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -1700,7 +1700,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.1x4",
+"source_control_name":"wolfclientmod.toggle.grid.1x4",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -1716,7 +1716,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.2x4",
+"source_control_name":"wolfclientmod.toggle.grid.2x4",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -1732,7 +1732,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.3x4",
+"source_control_name":"wolfclientmod.toggle.grid.3x4",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -1748,7 +1748,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.4x4",
+"source_control_name":"wolfclientmod.toggle.grid.4x4",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -1764,7 +1764,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.5x4",
+"source_control_name":"wolfclientmod.toggle.grid.5x4",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -1780,7 +1780,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.6x4",
+"source_control_name":"wolfclientmod.toggle.grid.6x4",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -1798,7 +1798,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.0x5",
+"source_control_name":"wolfclientmod.toggle.grid.0x5",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -1814,7 +1814,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.1x5",
+"source_control_name":"wolfclientmod.toggle.grid.1x5",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -1830,7 +1830,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.2x5",
+"source_control_name":"wolfclientmod.toggle.grid.2x5",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -1846,7 +1846,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.3x5",
+"source_control_name":"wolfclientmod.toggle.grid.3x5",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -1862,7 +1862,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.4x5",
+"source_control_name":"wolfclientmod.toggle.grid.4x5",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -1878,7 +1878,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.5x5",
+"source_control_name":"wolfclientmod.toggle.grid.5x5",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -1894,7 +1894,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.6x5",
+"source_control_name":"wolfclientmod.toggle.grid.6x5",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -1914,7 +1914,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.0x6",
+"source_control_name":"wolfclientmod.toggle.grid.0x6",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -1930,7 +1930,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.1x6",
+"source_control_name":"wolfclientmod.toggle.grid.1x6",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -1946,7 +1946,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.2x6",
+"source_control_name":"wolfclientmod.toggle.grid.2x6",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -1962,7 +1962,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.3x6",
+"source_control_name":"wolfclientmod.toggle.grid.3x6",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -1978,7 +1978,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.4x6",
+"source_control_name":"wolfclientmod.toggle.grid.4x6",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -1994,7 +1994,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.5x6",
+"source_control_name":"wolfclientmod.toggle.grid.5x6",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -2010,7 +2010,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.grid.6x6",
+"source_control_name":"wolfclientmod.toggle.grid.6x6",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -2036,7 +2036,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.rgb.crosshair",
+"source_control_name":"wolfclientmod.toggle.rgb.crosshair",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -2048,7 +2048,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.drawable.crosshair",
+"source_control_name":"wolfclientmod.toggle.drawable.crosshair",
 "source_property_name":"#toggle_state",
 "target_property_name":"#visible"
 }
@@ -2082,7 +2082,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.mod.coordinates",
+"source_control_name":"wolfclientmod.toggle.mod.coordinates",
 "source_property_name":"(not #toggle_state)",
 "target_property_name":"#visible"
 }]
@@ -2112,7 +2112,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.mod.potion",
+"source_control_name":"wolfclientmod.toggle.mod.potion",
 "source_property_name":"(not #toggle_state)",
 "target_property_name":"#visible"
 }
@@ -2148,7 +2148,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.mod.totem",
+"source_control_name":"wolfclientmod.toggle.mod.totem",
 "source_property_name":"(not #toggle_state)",
 "target_property_name":"#visible"
 }
@@ -2164,7 +2164,7 @@
 "bindings":[
 {
 "binding_type":"view",
-"source_control_name":"asteroid.toggle.mod.efepese",
+"source_control_name":"wolfclientmod.toggle.mod.efepese",
 "source_property_name":"(not #toggle_state)",
 "target_property_name":"#visible"
 }
@@ -2203,8 +2203,8 @@
 ]
 },
 
-"show_mod_panel@pausett.asteroid_toggle_custom_center":{
-"$toggle_view_binding_name":"asteroid.show.mod.menu",
+"show_mod_panel@pausett.wolfclientmod_toggle_custom_center":{
+"$toggle_view_binding_name":"wolfclientmod.show.mod.menu",
 "size":[50,18],
 "$toggle_name":"null",
 "$on_texture":"textures/ui/button_hover",
@@ -2222,8 +2222,8 @@
 },
 
 
-"show_mod_panel1@pausett.asteroid_toggle_custom_center":{
-"$toggle_view_binding_name":"asteroid.show.mod.menu",
+"show_mod_panel1@pausett.wolfclientmod_toggle_custom_center":{
+"$toggle_view_binding_name":"wolfclientmod.show.mod.menu",
 "size":[50,18],
 "$toggle_name":"null",
 "$on_texture":"textures/null",
