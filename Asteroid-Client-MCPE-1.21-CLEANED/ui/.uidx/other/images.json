@@ -25,7 +25,7 @@
 {
 "wolfclientmodtext":{
 "type":"label",
-"text":"Asteroid",
+"text":"Wolf Client Mod",
 "anchor_to":"top_right",
 "anchor_from":"top_right"
 }

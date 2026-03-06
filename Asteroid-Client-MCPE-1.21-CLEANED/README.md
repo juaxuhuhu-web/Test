@@ -1,4 +1,4 @@
-# Asteroid Client MCPE 1.21 - Mod Menu Only
+# Wolf Client Mod MCPE 1.21 - Mod Menu Only
 
 ## 📦 What's Included
 
@@ -35,7 +35,7 @@
 ## 📁 Directory Structure
 
 ```
-Asteroid-Client-MCPE-1.21-CLEANED/
+Wolf-Client-Mod-1.21-CLEANED/
 ├── manifest.json              # ⚙️ REQUIRED - Pack metadata
 └── ui/
     └── .uidx/
@@ -50,7 +50,7 @@ Asteroid-Client-MCPE-1.21-CLEANED/
         │   └── Mods.json
         └── other/             # 📊 UI assets
             ├── assets.json
-            ├── asteroid_hud.json
+            ├── wolfclientmod_hud.json
             ├── images.json
             └── pause_button.json
 ```

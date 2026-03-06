@@ -33,7 +33,7 @@
 },
 {
 "modlabel_1@settings_common.selector_group_label":{
-"text":"§rGo To Any Website To Convert Your Song To .ogg File, When File Is Downloaded Move Your Song To §bgames/mojang/resourcespacks/§cAsteroidPack§b/sounds/ §rAnd Move It There And Rename It To §9custom"
+"text":"§rGo To Any Website To Convert Your Song To .ogg File, When File Is Downloaded Move Your Song To §bgames/mojang/resourcespacks/§cWolf Client ModPack§b/sounds/ §rAnd Move It There And Rename It To §9custom"
 }
 },
 {
@@ -68,7 +68,7 @@
 },
 {
 "modlabel_5@settings_common.selector_group_label":{
-"text":"§rMake Your Image, And Paste It To §bgames/mojang/resourcepacks/§cAsteroidPack§b/textures/cosmetics §rAnd Rename It To §dTag"
+"text":"§rMake Your Image, And Paste It To §bgames/mojang/resourcepacks/§cWolf Client ModPack§b/textures/cosmetics §rAnd Rename It To §dTag"
 }
 },
 
@@ -87,7 +87,7 @@
 },
 {
 "modlabel_5@settings_common.selector_group_label":{
-"text":"Go To §bgames/mojang/resourcespacks/§cAsteroidPack§b/ui/§d_global_variables.json §r And Open It , There You Would See Mod Names There Change Them To §6true§r If You  Want Your Mod To Be On Everytime You Join A World Or Server , Or Insert §6false§r If You Want Your Mod To Be Off Everytime You Join A World Or Server"
+"text":"Go To §bgames/mojang/resourcespacks/§cWolf Client ModPack§b/ui/§d_global_variables.json §r And Open It , There You Would See Mod Names There Change Them To §6true§r If You  Want Your Mod To Be On Everytime You Join A World Or Server , Or Insert §6false§r If You Want Your Mod To Be Off Everytime You Join A World Or Server"
 }
 }
 ]
