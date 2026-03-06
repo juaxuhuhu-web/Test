@@ -1,49 +1,36 @@
-# Asteroid Client MCPE 1.21 - Cleaned Edition
+# Asteroid Client MCPE 1.21 - Mod Menu Only
 
 ## 📦 What's Included
 
-This is a **cleaned and optimized** version of the Asteroid Client resource pack, keeping only **mod settings and customization features** while removing unnecessary bloat.
+**ULTRA-MINIMAL version** - Contains **ONLY essential mod menu settings**. All cosmetics, textures, and visual effects removed.
 
-### ✅ Kept Features:
-- **Mod Settings**
-  - `manifest.json` - Pack metadata & version info
-  - `biomes_client.json` - Biome client-side settings
-  - `splashes.json` - Splash text configurations
+### ✅ Kept (Mod Menu System):
+- `manifest.json` - Required pack metadata
+- **Mod menu configs** - Settings and UI
+  - Crosshair customization
+  - Mods configuration
+  - Music/audio settings
+  - Interface settings
+  - Info settings
 
-- **Cosmetics & HUD** 
-  - Entity models for player customization
-  - Attachables (capes, hats, accessories)
-  - Animations and animation controllers
-  - Render controllers for visual effects
-
-- **Rendering & Effects**
-  - Materials for proper texture rendering
-  - Fogs and atmosphere settings
-  - Particles for visual effects
-  - Font customizations
-
-- **UI Customization**
-  - UI screen layouts and styling
-  - Settings menu configurations
-  - UI JSON definitions
-
-- **Behavior Scripts**
-  - JSON-based game behavior modifications
-  - Custom game logic
-
-### ❌ Removed (Bloat):
-- ✗ Massive texture packs (4.7MB+ bloat removed)
-- ✗ All sound audio files (1.5MB+ removed)
-- ✗ Unnecessary warning/permission files
-- ✗ Redundant block textures
-- ✗ Legacy/unused files
+### ❌ Removed (ALL Non-Essential):
+- ❌ Cosmetics (344KB - models, attachables, capes)
+- ❌ Particles (700KB+ - all effects)
+- ❌ Animations (28KB all removed)
+- ❌ Textures (4.7MB+ ALL REMOVED)
+- ❌ Sounds/Audio (1.5MB+ ALL REMOVED)
+- ❌ Font customization (180KB)
+- ❌ Materials & Renders
+- ❌ Entity configurations
+- ❌ All visual UI elements
 
 ## 📊 Size Comparison
 
-| Version | Size | Status |
-|---------|------|--------|
-| Original Pack | 8.5 MB | Bloated |
-| **Cleaned Pack** | **~3.2 MB** | **62% smaller!** |
+| Version | Size | Reduction |
+|---------|------|-----------|
+| Original Pack | 8.5 MB | - |
+| Cleaned Pack | 3.2 MB | -62% |
+| **Mod Menu Only** | **164 KB** | **-98%** ✨ |
 
 ## 🎮 Installation Guide
 
