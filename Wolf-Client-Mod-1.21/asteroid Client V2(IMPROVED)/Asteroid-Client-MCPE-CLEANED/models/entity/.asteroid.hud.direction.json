@@ -1,0 +1,28 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.asteroid.direccion.interfaz",
+				"texture_width": 62,
+				"texture_height": 7
+				
+			},
+			"bones": [
+				{
+					"name": "direction_bone",
+					"pivot": [0,7, 0],
+					"cubes": [
+						{
+							"origin": [-31, 0, 0],
+							"size": [62, 7, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [62,7]}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,75 @@
+{
+	"format_version": "1.10.0",
+	"geometry.asteroid.cosmetico.witchhat": {
+		"texturewidth": 64,
+		"textureheight": 128,
+		"visible_bounds_width": 2,
+		"visible_bounds_height": 4,
+		"visible_bounds_offset": [0, 2, 0],
+		"bones": [
+{
+"name":"root",
+"pivot":[0.0,0.0,0.0]
+},
+{
+"name":"body",
+"parent":"waist",
+"pivot":[0.0,24.0,0.0]
+},
+{
+"name":"waist",
+"parent":"root",
+"pivot":[0.0,12.0,0.0]
+},
+{
+"name":"head",
+"parent":"body",
+"pivot":[0.0,24.0,0.0]
+},
+			{
+				"name": "hat",
+				"parent": "head",
+				"pivot": [0, 24, 0],
+				"cubes": [
+					{"origin": [-5, 32.05, -5], "size": [10, 2, 10], "uv": [0, 64]}
+				]
+			},
+			{
+				"name": "hat2",
+				"parent": "hat",
+				"pivot": [1.75, 33, 2],
+				"rotation": [-3, 0, 1.5],
+				"cubes": [
+					{"origin": [-3.25, 33.5, -3], "size": [7, 4, 7], "uv": [0, 76]}
+				]
+			},
+			{
+				"name": "hat3",
+				"parent": "hat2",
+				"pivot": [1.75, 36, 2],
+				"rotation": [-6, 0, 3],
+				"cubes": [
+					{"origin": [-1.5, 36.5, -1], "size": [4, 4, 4], "uv": [0, 87]}
+				]
+			},
+			{
+				"name": "hat4",
+				"parent": "hat3",
+				"pivot": [1.75, 39, 2],
+				"rotation": [-12, 0, 6],
+				"cubes": [
+					{"origin": [0.25, 40, 1], "size": [1, 2, 1], "uv": [0, 95], "inflate": 0.25}
+				]
+			}
+		]
+	}
+}
+	}
+}[1, 2, 1], "uv": [0, 95], "inflate": 0.25}
+				]
+			}
+		]
+	}
+}
+	}
+}
