@@ -1,4 +1,8 @@
-{
+cd /workspaces/Test
+git pull origin maingit pull --rebase origin main
+git push origin maingit pull --rebase origin main
+git push origin maingit pull --rebase origin main
+git push origin main{
     "namespace": "pause_screen",
     "pause_menu": {
         "controls": [

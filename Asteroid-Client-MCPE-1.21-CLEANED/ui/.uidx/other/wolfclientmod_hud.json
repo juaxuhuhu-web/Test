@@ -2208,8 +2208,8 @@
 "size":[50,18],
 "$toggle_name":"null",
 "$on_texture":"textures/ui/button_hover",
-"$off_texture":"textures/null",
-"$hover_texture":"textures/null",
+"$off_texture":"textures/ui/button_default",
+"$hover_texture":"textures/ui/button_hover",
 "anchor_from":"bottom_right",
 "anchor_to":"bottom_right",
 "offset":[0,0],
@@ -2218,7 +2218,7 @@
 
 "$mod_icon":"textures/null",
 "$show_text":"MODS",
-"$hide_text":" "
+"$hide_text":"CLOSE"
 },
 
 
