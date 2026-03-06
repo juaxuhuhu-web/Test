@@ -1,0 +1,26 @@
+
+
+client.name=§3Asteroid §6Client
+
+
+options.maxFramerate=Frames Per Second(FPS)
+options.maxFramerateFormat=§b %s 
+
+
+map.position=XYZ : %s , %s , %s
+accessibility.chat.howtoopen=[§3Asteroid§r]§c | §rOpen Pause To Access Mods
+
+
+enchantment.level.1= [1]§r
+enchantment.level.10= [10]§r
+enchantment.level.2= [2]§r
+enchantment.level.3= [3]§r
+enchantment.level.4= [4]§r
+enchantment.level.5= [5]§r
+enchantment.level.6= [6]§r
+enchantment.level.7= [7]§r
+enchantment.level.8= [8]§r
+enchantment.level.9= [9]§r
+
+
+

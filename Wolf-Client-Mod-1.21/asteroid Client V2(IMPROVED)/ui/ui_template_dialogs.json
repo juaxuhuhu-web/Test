@@ -1,0 +1,39 @@
+
+
+{
+"namespace":"common_dialogs",
+
+
+
+"background_image": {
+"type": "image",
+"alpha":0.0,
+"texture": "textures/ui/control"
+},
+
+"main_panel_settings":{
+"type":"panel",
+"anchor_from":"center",
+"anchor_to":"center",
+"$text_name|default":"",
+"$custom_background|default":"dialog_background_hollow_4",
+"controls":[
+{
+"common_panel@common.common_panel":{
+"$dialog_background":"$custom_background"}
+},
+{
+"panel_indent":{
+"type":"panel",
+"size":["100%-16px","100% -13px"],
+"offset":[0,3],
+"anchor_from":"top_middle",
+"anchor_to":"top_middle",
+"controls":[
+{"inside_header_panel@$child_control":{}}
+]
+}
+}
+]
+}
+}

@@ -1,0 +1,21 @@
+
+{ 
+"format_version": "1.8.0", 
+"render_controllers": { 
+"controller.render.asteroid.tag":{
+"geometry":"Geometry.asteroid.tag.tercero",
+"materials":[{"*":"Material.blend"}],
+"textures":[
+"q.get_name == 'PatarHD123' ? texture.patar : (q.get_name == 'Riverrain123725' ? texture.river : texture.tag)"],
+"is_hurt_color": {},
+"on_fire_color": {},
+"ignore_lighting":true
+},
+
+"controller.render.shieldcos":{
+  "geometry":"geometry.shieldcos",
+  "materials":[{"*":"Material.blend"}],
+"textures":["texture.totem"]
+}
+}
+}

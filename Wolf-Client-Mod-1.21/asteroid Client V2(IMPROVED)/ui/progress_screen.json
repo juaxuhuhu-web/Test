@@ -1,0 +1,180 @@
+{
+"namespace": "progress",
+
+
+
+"modal_progress_panel_no_cancel": {
+"type": "panel",
+"size": "$modal_screen_size",
+"$background_fill_alpha|default": 0.8,
+"controls": [
+{
+"common_panel@common.common_panel": {
+"$dialog_background": "dialog_background_hollow_4",
+"$fill_alpha": "$background_fill_alpha",
+"$show_close_button": false
+}
+},
+{
+"content": {
+"type": "panel",
+"anchor_from": "top_left",
+"anchor_to": "top_left",
+
+"size": [ "100%-12px", "100%-12px" ],
+"offset": [ 6, 6 ],
+"controls": [
+{
+"title_panel@progress.title_panel": {}
+},
+{
+"progress_loading_bars@progress.progress_loading_bars": {}
+}
+]
+}
+}
+]
+},
+
+"modal_progress_panel_with_cancel": {
+"type": "panel",
+"size": "$modal_screen_size",
+"$background_fill_alpha|default": 0.8,
+"controls": [
+{
+"common_panel@common.common_panel": {
+"$dialog_background": "dialog_background_hollow_2",
+"$fill_alpha": "$background_fill_alpha",
+"$show_close_button": false
+}
+},
+{
+"content": {
+"type": "panel",
+"anchor_from": "top_left",
+"anchor_to": "top_left",
+"size": [ "100%-12px", "100%-60px" ],
+"offset": [ 6, 20 ],
+"controls": [
+{
+"title_panel@progress.title_panel": {}
+},
+{
+"progress_loading_bars@progress.progress_loading_bars": {}
+}
+]
+}
+},
+{
+"modal_button_panel@progress.modal_button_panel": {
+"anchor_from": "bottom_middle",
+"anchor_to": "bottom_middle",
+"size": [ "100%", 40 ]
+}
+}
+]
+},
+
+"progress_panel": {
+"type": "panel",
+"size": [ "100%", "100%" ],
+"controls": [
+{
+"progress_loading_bars@progress.progress_loading_bars": {}
+},
+{
+"title_panel@progress.title_panel": {}
+},
+{
+"button_panel@progress.button_panel": {}
+}
+]
+},
+
+"modal_progress_screen@progress_screen": {
+"$screen_content": "progress.modal_screen_content"
+},
+
+"delete_progress_screen@modal_progress_screen": {
+"$screen_animations": [
+"@common.screen_exit_animation_push_fade",
+"@common.screen_exit_animation_pop_fade",
+"@common.screen_entrance_animation_push_fade",
+"@common.screen_entrance_animation_pop_fade"
+]
+},
+
+"realms_loading_progress_screen@progress_screen": {
+"$screen_content": "progress.progress_screen_content",
+"$screen_bg_content": "common.portal_background"
+},
+
+"world_loading_progress_screen@progress_screen": {
+"$screen_content": "progress.world_convert_modal_progress_screen_content"
+},
+
+"world_loading_screen_background@common.dirt_background": {
+"tiled_scale": [ 2, 2 ]
+},
+
+"overworld_loading_background@world_loading_screen_background": {
+"texture": "textures/null",
+"controls": [
+{
+"background_gradient": {
+"type": "custom",
+"renderer": "gradient_renderer",
+"color1": [ 0, 0, 0, 0.5 ],
+"color2": [ 0, 0, 0, 0.7 ],
+"ignored": "$is_holographic"
+}
+}
+]
+},
+
+"overworld_loading_progress_screen@world_loading_progress_screen": {
+"force_render_below": true,
+"$screen_bg_content": "progress.overworld_loading_background"
+},
+
+"nether_loading_background@world_loading_screen_background": {
+"texture": "textures/null",
+"color": [ 0.5, 0.5, 0.5 ],
+"controls": [
+{
+"background_gradient": {
+"type": "custom",
+"renderer": "gradient_renderer",
+"color1": [ 0.3, 0.3, 0.3, 0.2 ],
+"color2": [ 0.5, 0.188, 0.188, 0.4 ],
+"ignored": "$is_holographic"
+}
+}
+]
+},
+
+"nether_loading_progress_screen@world_loading_progress_screen": {
+"force_render_below": true,
+"$screen_bg_content": "progress.nether_loading_background"
+},
+
+"theend_loading_background@world_loading_screen_background": {
+"texture": "textures/null",
+"controls": [
+{
+"background_gradient": {
+"type": "custom",
+"renderer": "gradient_renderer",
+"color1": [ 0, 0, 0, 0.2 ],
+"color2": [ 0, 0, 0, 0.4 ],
+"ignored": "$is_holographic"
+}
+}
+]
+},
+
+"theend_loading_progress_screen@world_loading_progress_screen": {
+"force_render_below": true,
+"$screen_bg_content": "progress.theend_loading_background"
+}
+}

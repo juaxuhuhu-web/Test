@@ -1,0 +1,182 @@
+{
+"namespace":"music_section",
+
+
+
+"musictoggle@pausett.asteroid_section_toggle": {
+"$toggle_group_forced_index": 2,
+"$toggle_view_binding_name":"asteroid.toggle.section.music",
+"$button_text":"Music",
+"$default_selector_toggle_index":1,
+"anchor_to":"top_middle",
+"anchor_from":"top_middle",
+"size":["90%",15],
+"offset":[0,70],
+"$tab_panel":"pausett.asteroid_toggle_control_section",
+"$on_texture":"textures/uidx/buttons/green2",
+"$off_texture":"textures/uidx/buttons/red2",
+"layer":7,
+"$show_text":"Music",
+"$hide_text":"Return"
+},
+
+
+
+
+"music_panel":{
+"type":"panel",
+"size":["70%","100% - 22px"],
+"anchor_from":"bottom_right",
+"anchor_to":"bottom_right",
+"controls":[
+{
+"Spotify":{
+"type":"image",
+"texture":"textures/uidx/pause_panel",
+"layer":7,
+"size":["90%",40],
+"anchor_from":"top_middle",
+"anchor_to":"top_middle",
+"offset":[0,28],
+"controls":[
+{
+"logo":{
+"type":"image",
+"texture":"textures/uidx/spotify",
+"size":[12,12],
+"anchor_from":"bottom_middle",
+"anchor_to":"bottom_middle",
+"offset":[-30,-25]
+}
+},
+{
+"stop_button@common_buttons.light_text_button":{
+"$button_text": "Stop",
+"$button_font_scale_factor": 0.8,
+"$pressed_button_name": "button.stop_song",
+"sound_name": "$sound_event",
+"$sound_event":"ui.asteroid",
+"sound_pitch": 1.0,
+"sound_volume": 0.00000000001,
+"button_mappings": [
+{
+"from_button_id": "button.menu_select",
+"to_button_id": "($sound_event + '.stop')",
+"mapping_type": "pressed"
+},
+{
+"from_button_id": "button.menu_secondary_select",
+"to_button_id": "($sound_event + '.stop')",
+"mapping_type": "pressed"
+},
+{
+"from_button_id": "button.menu_ok",
+"to_button_id": "($sound_event + '.stop')",
+"mapping_type": "pressed"
+},
+{
+"from_button_id": "button.controller_select",
+"to_button_id": "($sound_event + '.stop')",
+"mapping_type": "pressed"
+},
+{
+"from_button_id": "button.controller_secondary_select",
+"to_button_id": "($sound_event + '.stop')",
+"mapping_type": "pressed"
+}
+],
+"anchor_from":"bottom_middle",
+"anchor_to":"bottom_middle",
+"size":[35,15],
+"offset":[20,-2.5],
+"layer":15,
+"$hover_button_texture": "textures/uidx/buttons/red2",
+"$pressed_button_texture": "textures/uidx/buttons/red2",
+"$default_button_texture":"textures/uidx/buttons/red2"
+}
+},
+
+{
+"play_button@common_buttons.light_text_button":{
+"$button_text": "Play",
+"$pressed_button_name": "button.play_song",
+"sound_name": "$sound_event",
+"$sound_event":"ui.asteroid",
+"$button_font_scale_factor":0.8,
+"sound_pitch": 1.0,
+"sound_volume": 1,
+"button_mappings": [
+{
+"from_button_id": "button.menu_select",
+"to_button_id": "$sound_event",
+"mapping_type": "pressed"
+},
+{
+"from_button_id": "button.menu_secondary_select",
+"to_button_id": "$sound_event",
+"mapping_type": "pressed"
+},
+{
+"from_button_id": "button.menu_ok",
+"to_button_id": "$sound_event",
+"mapping_type": "pressed"
+},
+{
+"from_button_id": "button.controller_select",
+"to_button_id": "$sound_event",
+"mapping_type": "pressed"
+},
+{
+"from_button_id": "button.controller_secondary_select",
+"to_button_id": "$sound_event",
+"mapping_type": "pressed"
+}
+],
+"anchor_from":"bottom_middle",
+"anchor_to":"bottom_middle",
+"size":[35,15],
+"offset":[-20,-2.5],
+"layer":15,
+"$hover_button_texture": "textures/uidx/buttons/blue2",
+"$pressed_button_texture": "textures/uidx/buttons/blue2",
+"$default_button_texture":"textures/uidx/buttons/blue2"
+}
+},
+{
+"ateroidname":{
+"type":"label",
+"text":"Asteroid Client - Music",
+"font_scale_factor":0.6,
+"anchor_from":"bottom_middle",
+"anchor_to":"bottom_middle",
+"offset":[0,-17]
+
+}
+},
+{
+"ateroidname2":{
+"type":"label",
+"text":"Play Now",
+"font_scale_factor":0.6,
+"anchor_from":"bottom_middle",
+"anchor_to":"bottom_middle",
+"offset":[0,-26]
+
+}
+}
+]
+}
+}
+
+
+],
+"bindings":[
+{
+"binding_type":"view",
+"source_control_name":"asteroid.toggle.section.music",
+"source_property_name":"#toggle_state",
+"target_property_name":"#visible"
+}
+]
+}
+}

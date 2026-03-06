@@ -1,0 +1,73 @@
+
+
+{
+"namespace": "resource_packs",
+
+
+
+"available_packs_title_button@common_buttons.light_content_button": {
+"size": [ "fill", 20 ],
+"$hover_button_texture": "textures/uidx/buttons/green2",
+"$pressed_button_texture": "textures/uidx/buttons/green2",
+"$default_button_texture":"textures/uidx/pause_panel",
+"$button_content": "resource_packs.available_packs_title_content",
+"$pressed_button_name": "$button.expand_available"
+},
+
+"realms_packs_title_button@common_buttons.light_content_button": {
+"size": [ "100%", 20 ],
+"$hover_button_texture": "textures/uidx/buttons/green2",
+"$pressed_button_texture": "textures/uidx/buttons/green2",
+"$default_button_texture":"textures/uidx/pause_panel",
+"$button_content": "resource_packs.realms_packs_title_content",
+"$pressed_button_name": "$button.expand_realms"
+},
+
+"unowned_packs_title_button@common_buttons.light_content_button": {
+"size": [ "100%", 20 ],
+"$hover_button_texture": "textures/uidx/buttons/green2",
+"$pressed_button_texture": "textures/uidx/buttons/green2",
+"$default_button_texture":"textures/uidx/pause_panel",
+"$button_content": "resource_packs.unowned_packs_title_content",
+"$pressed_button_name": "$button.expand_unowned"
+},
+
+"selected_packs_title_button@common_buttons.light_content_button": {
+"size": [ "fill", 20 ],
+"$hover_button_texture": "textures/uidx/buttons/green2",
+"$pressed_button_texture": "textures/uidx/buttons/green2",
+"$default_button_texture":"textures/uidx/pause_panel",
+"$button_content": "resource_packs.selected_packs_title_content",
+"$pressed_button_name": "$button.expand_selected"
+},
+
+
+
+"resource_packs_section_toggle_base@common_toggles.light_ui_toggle": {
+
+"anchor_from": "top_left",
+
+"anchor_to": "top_left",
+"size": [ "100%", "30px" ],
+"$button_size_override": [ "100%", "100% + 1px" ],
+
+"$button_type_panel": "resource_packs.resource_packs_toggle_button_control",
+
+"$radio_toggle_group": true,
+"$toggle_name": "navigation_tab",
+"$toggle_group_default_selected": "$default_selector_toggle_index",
+
+"$toggle_tab_focus_binding_type": "global",
+"$toggle_tab_focus_binding_name": "#navigation_tab_focus_precedence",
+"$toggle_on_hover_binding_type": "global",
+"$toggle_on_hover_binding_name": "#toggle_on_hover",
+"$default_texture":"textures/uidx/background_ui",
+"$hover_texture": "textures/uidx/buttons/green2",
+"$pressed_texture": "textures/uidx/buttons/green2",
+"$pressed_no_hover_texture": "textures/uidx/buttons/green2",
+"$toggle_tts_override_toggle_value": " ",
+"$toggle_tts_name": "" 
+}
+
+
+}

@@ -1,0 +1,237 @@
+
+
+
+{
+"format_version": "1.8.0",
+"render_controllers": {
+"controller.render.asteroid.pocion.uno": {
+"geometry": "Geometry.asteroid.pocion.uno",
+"materials": [{"*": "Material.default"}],
+"part_visibility":[{"*":"variable.asteroid_user == 1 && !v.is_paperdoll"}],
+"filter_lighting": true,
+"ignore_lighting": true,
+"is_hurt_color":{},
+"on_fire_color":{},
+"arrays": {
+"textures": {
+"array.pociones": [
+"Texture.n0",
+"Texture.n1",
+"Texture.n2",
+"Texture.n3",
+"Texture.n4",
+"Texture.n5",
+"Texture.n6",
+"Texture.n7",
+"Texture.n8",
+"Texture.n9"
+]
+}
+},
+"textures": [
+"array.pociones[v.pociones]"
+]
+},
+
+
+
+
+
+
+
+
+"controller.render.asteroid.pocion.diez": {
+"geometry": "Geometry.asteroid.pocion.diez",
+"materials": [{"*": "Material.default"}],
+"is_hurt_color":{},
+"on_fire_color":{},
+"part_visibility":[{"*":"variable.asteroid_user == 1 && !v.is_paperdoll"}],
+"filter_lighting": true,
+"ignore_lighting": true,
+"arrays": {
+"textures": {
+"array.pociones": [
+"Texture.n0",
+"Texture.n1",
+"Texture.n2",
+"Texture.n3",
+"Texture.n4",
+"Texture.n5",
+"Texture.n6",
+"Texture.n7",
+"Texture.n8",
+"Texture.n9"
+]
+}
+},
+"textures": [
+"array.pociones[v.pociones/10]"
+]
+},
+
+
+
+
+"controller.render.asteroid.totems.uno": {
+"geometry": "Geometry.asteroid.totems.uno",
+"part_visibility":[{"*":"variable.asteroid_user == 1 && !v.is_paperdoll"}],
+"materials": [{"*": "Material.default"}],
+"is_hurt_color":{},
+"on_fire_color":{},
+"filter_lighting": true,
+"ignore_lighting": true,
+"arrays": {
+"textures": {
+"array.pociones": [
+"Texture.n0",
+"Texture.n1",
+"Texture.n2",
+"Texture.n3",
+"Texture.n4",
+"Texture.n5",
+"Texture.n6",
+"Texture.n7",
+"Texture.n8",
+"Texture.n9"
+]
+}
+},
+"textures": [
+"array.pociones[v.totems]"
+]
+},
+
+
+
+
+
+
+
+
+"controller.render.asteroid.totems.diez": {
+"geometry": "Geometry.asteroid.totems.diez",
+"part_visibility":[{"*":"variable.asteroid_user == 1 && !v.is_paperdoll"}],
+"materials": [{"*": "Material.default"}],
+"filter_lighting": true,
+"ignore_lighting": true,
+"is_hurt_color":{},
+"on_fire_color":{},
+"arrays": {
+"textures": {
+"array.pociones": [
+"Texture.n0",
+"Texture.n1",
+"Texture.n2",
+"Texture.n3",
+"Texture.n4",
+"Texture.n5",
+"Texture.n6",
+"Texture.n7",
+"Texture.n8",
+"Texture.n9"
+]
+}
+},
+"textures": [
+"array.pociones[v.totems/10]"
+]
+},
+
+
+
+
+
+
+"controller.render.asteroid.efepese.uno": {
+"geometry": "Geometry.asteroid.efepese.uno",
+"materials": [{"*": "Material.default"}],
+"filter_lighting": true,
+"ignore_lighting": true,
+"is_hurt_color":{},
+"on_fire_color":{},
+"arrays": {
+"textures": {
+"array.pociones": [
+"Texture.n0",
+"Texture.n1",
+"Texture.n2",
+"Texture.n3",
+"Texture.n4",
+"Texture.n5",
+"Texture.n6",
+"Texture.n7",
+"Texture.n8",
+"Texture.n9"
+]
+}
+},
+"textures": ["array.pociones[ v.efepese * 10]"]
+},
+
+
+
+
+
+
+
+
+"controller.render.asteroid.efepese.diez": {
+"geometry": "Geometry.asteroid.efepese.diez",
+"materials": [{"*": "Material.default"}],
+"filter_lighting": true,
+"ignore_lighting": true,
+"is_hurt_color":{},
+
+"on_fire_color":{},
+"arrays": {
+"textures": {
+"array.pociones": [
+"Texture.n0",
+"Texture.n1",
+"Texture.n2",
+"Texture.n3",
+"Texture.n4",
+"Texture.n5",
+"Texture.n6",
+"Texture.n7",
+"Texture.n8",
+"Texture.n9"
+]
+}
+},
+"textures": [
+"array.pociones[ v.efepese]"
+]
+},
+
+
+
+"controller.render.asteroid.efepese.cien": {
+"geometry": "Geometry.asteroid.efepese.cien",
+"materials": [{"*": "Material.default"}],
+"filter_lighting": true,
+"is_hurt_color":{},
+"on_fire_color":{},
+"ignore_lighting": true,
+"arrays": {
+"textures": {
+"array.pociones": [
+"Texture.n0",
+"Texture.n1",
+"Texture.n2",
+"Texture.n3",
+"Texture.n4",
+"Texture.n5",
+"Texture.n6",
+"Texture.n7",
+"Texture.n8",
+"Texture.n9"
+]
+}
+},
+"textures": [
+"array.pociones[ v.efepese / 10]"
+]
+}
+}
+}

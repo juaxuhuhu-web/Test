@@ -1,0 +1,95 @@
+{ "namespace":"mods",
+
+
+"mods_button@settings_common.section_toggle_base": {
+"$toggle_view_binding_name": "automation_button_toggle",
+"$glyph_texture": "textures/ui/automation_glyph",
+"$glyph_color_texture": "textures/ui/automation_glyph_color",
+"$glyph_size": [ 15, 15 ],
+"$button_text": "MODS",
+"$toggle_property_bag": {
+"#panel_title": "MODS"
+}
+},
+"mods_section": {
+"type": "stack_panel",
+"size": [ "100%", "100%c" ],
+"anchor_from": "top_left",
+"anchor_to": "top_left",
+"bindings": [
+{
+"binding_type": "view",
+"source_control_name": "automation_button_toggle",
+"source_property_name": "#toggle_state",
+"target_property_name": "#visible"
+}
+],
+"controls": [
+{
+"modlabel_0@settings_common.selector_group_label":{
+"text":"§3How To Add Custom Music",
+"font_type":"gantari"
+}
+},
+{
+"modlabel_1@settings_common.selector_group_label":{
+"text":"§rGo To Any Website To Convert Your Song To .ogg File, When File Is Downloaded Move Your Song To §bgames/mojang/resourcespacks/§cAsteroidPack§b/sounds/ §rAnd Move It There And Rename It To §9custom"
+}
+},
+{
+"spacer_1": {
+"type": "panel", 
+"size": [ 2,10] 
+} 
+}, 
+{
+"modlabel_2@settings_common.selector_group_label":{
+"text":"§3How To Activate FreeLook",
+"font_type":"gantari"
+
+}
+},
+{
+"modlabel_3@settings_common.selector_group_label":{
+"text":"§rHold A §6Arrow§r In Your Left Hand And Go Into Third  Person."
+}
+},
+{
+"spacer_2": {
+"type": "panel", 
+"size": [ 2,10] 
+} 
+}, 
+{
+"modlabel_4@settings_common.selector_group_label":{
+"text":"§3How To Have A Custom Name Tag",
+"font_type":"gantari"
+}
+},
+{
+"modlabel_5@settings_common.selector_group_label":{
+"text":"§rMake Your Image, And Paste It To §bgames/mojang/resourcepacks/§cAsteroidPack§b/textures/cosmetics §rAnd Rename It To §dTag"
+}
+},
+
+
+{
+"spacer_2": {
+"type": "panel", 
+"size": [ 2,10] 
+} 
+}, 
+{
+"modlabel_4@settings_common.selector_group_label":{
+"text":"§3How To Have Saveable Mods",
+"font_type":"gantari"
+}
+},
+{
+"modlabel_5@settings_common.selector_group_label":{
+"text":"Go To §bgames/mojang/resourcespacks/§cAsteroidPack§b/ui/§d_global_variables.json §r And Open It , There You Would See Mod Names There Change Them To §6true§r If You  Want Your Mod To Be On Everytime You Join A World Or Server , Or Insert §6false§r If You Want Your Mod To Be Off Everytime You Join A World Or Server"
+}
+}
+]
+}
+}
