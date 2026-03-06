@@ -1,0 +1,31 @@
+{
+    "namespace": "pause_screen",
+    "pause_menu": {
+        "controls": [
+            {
+                "mod_menu_button@pausett.wolfclientmod_section_toggle": {
+                    "$toggle_view_binding_name": "wolfclientmod.show.mod.menu",
+                    "$button_text": "Mod Menu",
+                    "$on_texture": "textures/ui/button_hover",
+                    "$off_texture": "textures/ui/button_default",
+                    "size": ["100%", "40px"],
+                    "offset": [0, 10]
+                }
+            }
+        ]
+    },
+    "mod_menu_panel@m_section.modules_panel": {
+        "visible": false,
+        "anchor_from": "center",
+        "anchor_to": "center",
+        "size": ["80%", "80%"],
+        "bindings": [
+            {
+                "binding_type": "view",
+                "source_control_name": "wolfclientmod.show.mod.menu",
+                "source_property_name": "#toggle_state",
+                "target_property_name": "#visible"
+            }
+        ]
+    }
+}

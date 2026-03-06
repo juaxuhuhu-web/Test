@@ -1,0 +1,6 @@
+{
+    "namespace": "hud_screen",
+    "wolfclientmod_hud@wolfclientmod_hud.wolfclientmod_hud": {
+        "layer": 10
+    }
+}
