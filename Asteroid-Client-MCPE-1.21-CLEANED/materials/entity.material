@@ -1,0 +1,25 @@
+{
+  "materials": {
+    "version": "1.0.0",
+"xray:entity":{
+      "+states": [
+
+
+
+        "Blending"
+      ],
+      "depthFunc": "Always",
+      "vertexShader": "shaders/position.vertex",
+      "vrGeometryShader": "shaders/position.geometry",
+      "vertexFields": [
+        { "field": "Position" }
+      ],
+
+      "msaaSupport": "Both"
+
+}
+
+
+}
+}
+

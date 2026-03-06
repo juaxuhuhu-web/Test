@@ -1,0 +1,691 @@
+
+
+
+{
+"format_version":"1.8.0",
+"render_controllers": {
+
+
+
+"controller.render.asteroid.xpos": {
+"textures":["(query.position(0) > 0 ? texture.plus : texture.minus)"],
+"geometry": "Geometry.xpos",
+"is_hurt_color": {},
+"on_fire_color": {},
+"light_color_multiplier":1,
+"ignore_lighting":true,
+"part_visibility":[{"*":"q.is_in_ui"}],
+"materials": [ {"*": "Material.default"}]
+
+},
+"controller.render.asteroid.ypos": {
+"textures":["(query.position(1) > 0 ? texture.plus : texture.minus)"],
+"geometry": "Geometry.ypos",
+"is_hurt_color": {},
+"on_fire_color": {},
+"light_color_multiplier":1,
+"ignore_lighting":true,
+"part_visibility":[{"*":"q.is_in_ui"}],
+"materials": [ {"*": "Material.default"}]
+
+},
+"controller.render.asteroid.zpos": {
+"textures":["(q.position(2) > 0 ? texture.plus : texture.minus)"],
+"geometry": "Geometry.zpos",
+"is_hurt_color": {},
+"on_fire_color": {},
+"light_color_multiplier":1,
+"ignore_lighting":true,
+"part_visibility":[{"*":"q.is_in_ui"}],
+"materials": [ {"*": "Material.default"}]
+
+},
+"controller.render.asteroid.x1": {
+"geometry":"Geometry.x1",
+"materials":[{"*":"Material.default"}],
+"arrays": {
+"textures": {
+"array.timer":[
+"Texture.n0",
+"Texture.n1",
+"Texture.n2",
+"Texture.n3",
+"Texture.n4",
+"Texture.n5",
+"Texture.n6",
+"Texture.n7",
+"Texture.n8",
+"Texture.n9"
+]
+}
+},
+"textures": [
+"array.timer[(query.position(0) > 0 ? query.position(0) : math.abs(query.position(0) -1))]"
+],
+"is_hurt_color": {},
+"part_visibility":[{"*":"q.is_in_ui"}],
+"on_fire_color": {}
+},
+"controller.render.asteroid.x10": {
+"geometry":"Geometry.x10",
+"materials":[{"*":"Material.default"}],
+"is_hurt_color": {},
+"part_visibility":[{"*":"q.is_in_ui"}],
+"on_fire_color": {},
+"arrays": {
+"textures": {
+"array.timer":[
+"Texture.n0",
+"Texture.n1",
+"Texture.n2",
+"Texture.n3",
+"Texture.n4",
+"Texture.n5",
+"Texture.n6",
+"Texture.n7",
+"Texture.n8",
+"Texture.n9"
+]
+}
+},
+"textures": [
+"array.timer[ (query.position(0) > 0 ? query.position(0)/10 : math.abs((query.position(0) - (query.position(0) <= 0)) / 10))]"
+]
+},
+"controller.render.asteroid.x100": {
+"geometry":"Geometry.x100",
+"materials":[{"*":"Material.default"}],
+"is_hurt_color": {},
+"part_visibility":[{"*":"q.is_in_ui"}],
+"on_fire_color": {},
+
+"arrays": {
+"textures": {
+"array.timer":[
+"Texture.n0",
+"Texture.n1",
+"Texture.n2",
+"Texture.n3",
+"Texture.n4",
+"Texture.n5",
+"Texture.n6",
+"Texture.n7",
+"Texture.n8",
+"Texture.n9"
+]
+}
+},
+"textures": [
+"array.timer[ (query.position(0) > 0 ? query.position(0)/100 : math.abs((query.position(0) - (query.position(0) <= 0)) / 100))]"
+]
+},
+"controller.render.asteroid.x1000": {
+"geometry":"Geometry.x1000",
+"materials":[{"*":"Material.default"}],
+"is_hurt_color": {},
+"part_visibility":[{"*":"q.is_in_ui"}],
+"on_fire_color": {},
+"arrays": {
+"textures": {
+"array.timer":[
+"Texture.n0",
+"Texture.n1",
+"Texture.n2",
+"Texture.n3",
+"Texture.n4",
+"Texture.n5",
+"Texture.n6",
+"Texture.n7",
+"Texture.n8",
+"Texture.n9"
+]
+}
+},
+"textures": [
+"array.timer[ (query.position(0) > 0 ? query.position(0)/1000 : math.abs((query.position(0) - (query.position(0) <= 0)) / 1000))]"
+]
+},
+"controller.render.asteroid.x10000": {
+"geometry":"Geometry.x10000",
+"materials":[{"*":"Material.default"}],
+"is_hurt_color": {},
+"part_visibility":[{"*":"q.is_in_ui"}],
+"on_fire_color": {},
+"arrays": {
+"textures": {
+"array.timer":[
+"Texture.n0",
+"Texture.n1",
+"Texture.n2",
+"Texture.n3",
+"Texture.n4",
+"Texture.n5",
+"Texture.n6",
+"Texture.n7",
+"Texture.n8",
+"Texture.n9"
+]
+}
+},
+"textures": [
+"array.timer[ (query.position(0) > 0 ? query.position(0)/10000 : math.abs((query.position(0) - (query.position(0) <= 0)) / 10000))]"
+]
+},
+"controller.render.asteroid.x100000": {
+"geometry":"Geometry.x100000",
+"materials":[{"*":"Material.default"}],
+"is_hurt_color": {},
+"part_visibility":[{"*":"q.is_in_ui"}],
+"on_fire_color": {},
+"arrays": {
+"textures": {
+"array.timer":[
+"Texture.n0",
+"Texture.n1",
+"Texture.n2",
+"Texture.n3",
+"Texture.n4",
+"Texture.n5",
+"Texture.n6",
+"Texture.n7",
+"Texture.n8",
+"Texture.n9"
+]
+}
+},
+"textures": [
+"array.timer[ (query.position(0) > 0 ? query.position(0)/100000 : math.abs((query.position(0) - (query.position(0) <= 0)) / 100000))]"
+]
+},
+"controller.render.asteroid.x1000000": {
+"geometry":"Geometry.x1000000",
+"materials":[{"*":"Material.default"}],
+"is_hurt_color": {},
+"part_visibility":[{"*":"q.is_in_ui"}],
+"on_fire_color": {},
+
+"arrays": {
+"textures": {
+"array.timer":[
+"Texture.n0",
+"Texture.n1",
+"Texture.n2",
+"Texture.n3",
+"Texture.n4",
+"Texture.n5",
+"Texture.n6",
+"Texture.n7",
+"Texture.n8",
+"Texture.n9"
+]
+}
+},
+"textures": [
+"array.timer[ (query.position(0) > 0 ? query.position(0)/1000000 : math.abs((query.position(0) - (query.position(0) <= 0)) / 1000000))]"
+]
+},
+"controller.render.asteroid.x10000000": {
+"geometry":"Geometry.x10000000",
+"materials":[{"*":"Material.default"}],
+"is_hurt_color": {},
+"part_visibility":[{"*":"q.is_in_ui"}],
+"on_fire_color": {},
+"arrays": {
+"textures": {
+"array.timer":[
+"Texture.n0",
+"Texture.n1",
+"Texture.n2",
+"Texture.n3",
+"Texture.n4",
+"Texture.n5",
+"Texture.n6",
+"Texture.n7",
+"Texture.n8",
+"Texture.n9"
+]
+}
+},
+"textures": [
+"array.timer[ (query.position(0) > 0 ? query.position(0)/10000000 : math.abs((query.position(0) - (query.position(0) <= 0)) / 10000000))]"
+]
+},
+
+
+
+
+
+
+
+"controller.render.asteroid.y1": {
+"geometry":"Geometry.y1",
+"materials":[{"*":"Material.default"}],
+"arrays": {
+"textures": {
+"array.timer":[
+"Texture.n0",
+"Texture.n1",
+"Texture.n2",
+"Texture.n3",
+"Texture.n4",
+"Texture.n5",
+"Texture.n6",
+"Texture.n7",
+"Texture.n8",
+"Texture.n9"
+]
+}
+},
+"textures": [
+"array.timer[math.ceil(math.abs((query.position(1) - ((query.position(1) <= 0) * 2) - 1))) - 1]"
+],
+"is_hurt_color": {},
+"part_visibility":[{"*":"q.is_in_ui"}],
+"on_fire_color": {}
+},
+"controller.render.asteroid.y10": {
+"geometry":"Geometry.y10",
+"materials":[{"*":"Material.default"}],
+"is_hurt_color": {},
+
+"on_fire_color": {},
+
+"arrays": {
+"textures": {
+"array.timer":[
+"Texture.n0",
+"Texture.n1",
+"Texture.n2",
+"Texture.n3",
+"Texture.n4",
+"Texture.n5",
+"Texture.n6",
+"Texture.n7",
+"Texture.n8",
+"Texture.n9"
+]
+}
+},
+"textures": ["array.timer[math.ceil(math.abs((query.position(1) - ((query.position(1) <= 0) * 2) - 1) / 10)) - 1]"
+]
+},
+"controller.render.asteroid.y100": {
+"geometry":"Geometry.y100",
+"part_visibility":[{"*":"q.is_in_ui"}],
+"materials":[{"*":"Material.default"}],
+"is_hurt_color": {},
+
+"on_fire_color": {},
+
+"arrays": {
+"textures": {
+"array.timer":[
+"Texture.n0",
+"Texture.n1",
+"Texture.n2",
+"Texture.n3",
+"Texture.n4",
+"Texture.n5",
+"Texture.n6",
+"Texture.n7",
+"Texture.n8",
+"Texture.n9"
+]
+}
+},
+"textures": ["array.timer[math.ceil(math.abs((query.position(1) - ((query.position(1) <= 0) * 2) - 1) / 100)) - 1]"
+
+]
+},
+"controller.render.asteroid.y1000": {
+"geometry":"Geometry.y1000",
+"materials":[{"*":"Material.default"}],
+"is_hurt_color": {},
+"part_visibility":[{"*":"q.is_in_ui"}],
+"on_fire_color": {},
+"arrays": {
+"textures": {
+"array.timer":[
+"Texture.n0",
+"Texture.n1",
+"Texture.n2",
+"Texture.n3",
+"Texture.n4",
+"Texture.n5",
+"Texture.n6",
+"Texture.n7",
+"Texture.n8",
+"Texture.n9"
+]
+}
+},
+"textures": ["array.timer[math.ceil(math.abs((query.position(1) - ((query.position(1) <= 0) * 2) - 1) / 1000)) - 1]"
+]
+},
+"controller.render.asteroid.y10000": {
+"geometry":"Geometry.y10000",
+"materials":[{"*":"Material.default"}],
+"is_hurt_color": {},
+"part_visibility":[{"*":"q.is_in_ui"}],
+"on_fire_color": {},
+"arrays": {
+"textures": {
+"array.timer":[
+"Texture.n0",
+"Texture.n1",
+"Texture.n2",
+"Texture.n3",
+"Texture.n4",
+"Texture.n5",
+"Texture.n6",
+"Texture.n7",
+"Texture.n8",
+"Texture.n9"
+]
+}
+},
+"textures": ["array.timer[math.ceil(math.abs((query.position(1) - ((query.position(1) <= 0) * 2) - 1) / 10000)) - 1]"
+]
+},
+"controller.render.asteroid.y100000": {
+"geometry":"Geometry.y100000",
+"materials":[{
+"*":"Material.default"
+}],
+"is_hurt_color": {},
+"part_visibility":[{"*":"q.is_in_ui"}],
+"on_fire_color": {},
+"arrays": {
+"textures": {
+"array.timer":[
+"Texture.n0",
+"Texture.n1",
+"Texture.n2",
+"Texture.n3",
+"Texture.n4",
+"Texture.n5",
+"Texture.n6",
+"Texture.n7",
+"Texture.n8",
+"Texture.n9"
+]
+}
+},
+
+"textures": ["array.timer[math.ceil(math.abs((query.position(1) - ((query.position(1) <= 0) * 2) - 1) / 100000)) - 1]"
+]
+},
+"controller.render.asteroid.y1000000": {
+"geometry":"Geometry.y1000000",
+"materials":[{"*":"Material.default"}],
+"is_hurt_color": {},
+"part_visibility":[{"*":"q.is_in_ui"}],
+"on_fire_color": {},
+
+"arrays": {
+"textures": {
+"array.timer":[
+"Texture.n0",
+"Texture.n1",
+"Texture.n2",
+"Texture.n3",
+"Texture.n4",
+"Texture.n5",
+"Texture.n6",
+"Texture.n7",
+"Texture.n8",
+"Texture.n9"
+]
+}
+},
+"textures": ["array.timer[math.ceil(math.abs((query.position(1) - ((query.position(1) <= 0) * 2) - 1) / 1000000)) - 1]"
+]
+},
+"controller.render.asteroid.y10000000": {
+"geometry":"Geometry.y10000000",
+"materials":[{"*":"Material.default"}],
+"is_hurt_color": {},
+"part_visibility":[{"*":"q.is_in_ui"}],
+"on_fire_color": {},
+"arrays": {
+"textures": {
+"array.timer":[
+"Texture.n0",
+"Texture.n1",
+"Texture.n2",
+"Texture.n3",
+"Texture.n4",
+"Texture.n5",
+"Texture.n6",
+"Texture.n7",
+"Texture.n8",
+"Texture.n9"
+]
+}
+},
+"textures": ["array.timer[math.ceil(math.abs((query.position(1) - ((query.position(1) <= 0) * 2) - 1) / 10000000)) - 1]"
+]
+},
+
+
+"controller.render.asteroid.z1": {
+"geometry":"Geometry.z1",
+"materials":[{"*":"Material.default"}],
+"arrays": {
+"textures": {
+"array.timer":[
+"Texture.n0",
+"Texture.n1",
+"Texture.n2",
+"Texture.n3",
+"Texture.n4",
+"Texture.n5",
+"Texture.n6",
+"Texture.n7",
+"Texture.n8",
+"Texture.n9"
+]
+}
+},
+"textures":[
+"array.timer[(q.position(2) > 0 ? q.position(2) : math.abs(q.position(2) -1))]"
+],
+"is_hurt_color": {},
+"part_visibility":[{"*":"q.is_in_ui"}],
+"on_fire_color": {}
+},
+"controller.render.asteroid.z10": {
+"geometry":"Geometry.z10",
+"materials":[{"*":"Material.default"}],
+"is_hurt_color": {},
+"part_visibility":[{"*":"q.is_in_ui"}],
+"on_fire_color": {},
+
+"arrays": {
+"textures": {
+"array.timer":[
+"Texture.n0",
+"Texture.n1",
+"Texture.n2",
+"Texture.n3",
+"Texture.n4",
+"Texture.n5",
+"Texture.n6",
+"Texture.n7",
+"Texture.n8",
+"Texture.n9"
+]
+}
+},
+"textures": [
+"array.timer[ (q.position(2) > 0 ? q.position(2) /10 : math.abs((q.position(2) - (q.position(2) <= 0)) / 10))]"
+]
+},
+"controller.render.asteroid.z100": {
+"geometry":"Geometry.z100",
+"materials":[{"*":"Material.default"}],
+"is_hurt_color": {},
+"part_visibility":[{"*":"q.is_in_ui"}],
+"on_fire_color": {},
+
+"arrays": {
+"textures": {
+"array.timer":[
+"Texture.n0",
+"Texture.n1",
+"Texture.n2",
+"Texture.n3",
+"Texture.n4",
+"Texture.n5",
+"Texture.n6",
+"Texture.n7",
+"Texture.n8",
+"Texture.n9"
+]
+}
+},
+"textures": [
+"array.timer[ (q.position(2) > 0 ? q.position(2) /100 : math.abs((q.position(2) - (q.position(2) <= 0)) / 100))]"
+]
+},
+"controller.render.asteroid.z1000": {
+"geometry":"Geometry.z1000",
+"materials":[{"*":"Material.default"}],
+"is_hurt_color": {},
+"part_visibility":[{"*":"q.is_in_ui"}],
+"on_fire_color": {},
+"arrays": {
+"textures": {
+"array.timer":[
+"Texture.n0",
+"Texture.n1",
+"Texture.n2",
+"Texture.n3",
+"Texture.n4",
+"Texture.n5",
+"Texture.n6",
+"Texture.n7",
+"Texture.n8",
+"Texture.n9"
+]
+}
+},
+"textures": [
+"array.timer[ (q.position(2) > 0 ? q.position(2) /1000 : math.abs((q.position(2) - (q.position(2) <= 0)) / 1000))]"
+]
+},
+"controller.render.asteroid.z10000": {
+"geometry":"Geometry.z10000",
+"materials":[{"*":"Material.default"}],
+"is_hurt_color": {},
+"part_visibility":[{"*":"q.is_in_ui"}],
+"on_fire_color": {},
+
+"arrays": {
+"textures": {
+"array.timer":[
+"Texture.n0",
+"Texture.n1",
+"Texture.n2",
+"Texture.n3",
+"Texture.n4",
+"Texture.n5",
+"Texture.n6",
+"Texture.n7",
+"Texture.n8",
+"Texture.n9"
+]
+}
+},
+"textures": [
+"array.timer[ (q.position(2) > 0 ? q.position(2) /10000 : math.abs((q.position(2) - (q.position(2) <= 0)) / 10000))]"
+]
+},
+"controller.render.asteroid.z100000": {
+"geometry":"Geometry.z100000",
+"materials":[{"*":"Material.default"}],
+"is_hurt_color": {},
+"part_visibility":[{"*":"q.is_in_ui"}],
+"on_fire_color": {},
+"arrays": {
+"textures": {
+"array.timer":[
+"Texture.n0",
+"Texture.n1",
+"Texture.n2",
+"Texture.n3",
+"Texture.n4",
+"Texture.n5",
+"Texture.n6",
+"Texture.n7",
+"Texture.n8",
+"Texture.n9"
+]
+}
+},
+"textures": [
+"array.timer[ (q.position(2) > 0 ? q.position(2) /100000 : math.abs((q.position(2) - (q.position(2) <= 0)) / 100000))]"
+]
+},
+"controller.render.asteroid.z1000000": {
+"geometry":"Geometry.z1000000",
+"materials":[{"*":"Material.default"}],
+"is_hurt_color": {},
+"part_visibility":[{"*":"q.is_in_ui"}],
+"on_fire_color": {},
+
+"arrays": {
+"textures": {
+"array.timer":[
+"Texture.n0",
+"Texture.n1",
+"Texture.n2",
+"Texture.n3",
+"Texture.n4",
+"Texture.n5",
+"Texture.n6",
+"Texture.n7",
+"Texture.n8",
+"Texture.n9"
+]
+}
+},
+"textures": [
+"array.timer[ (q.position(2) > 0 ? q.position(2) /1000000 : math.abs((q.position(2) - (q.position(2) <= 0)) / 1000000))]"
+]
+},
+"controller.render.asteroid.z10000000": {
+"geometry":"Geometry.z10000000",
+"materials":[{"*":"Material.default"}],
+"is_hurt_color": {},
+"part_visibility":[{"*":"q.is_in_ui"}],
+"on_fire_color": {},
+"arrays": {
+"textures": {
+"array.timer":[
+"Texture.n0",
+"Texture.n1",
+"Texture.n2",
+"Texture.n3",
+"Texture.n4",
+"Texture.n5",
+"Texture.n6",
+"Texture.n7",
+"Texture.n8",
+"Texture.n9"
+]
+}
+},
+"textures": [
+"array.timer[ (q.position(2) > 0 ? q.position(2) /10000000 : math.abs((q.position(2) - (q.position(2) <= 0)) / 10000000))]"
+]
+}
+
+
+
+
+
+}
+}
+
+//made by chixuty (y position code by chainsketch)//

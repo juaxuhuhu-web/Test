@@ -1,0 +1,985 @@
+
+
+
+
+
+{
+ "namespace" :"asteroid_hud_content" ,
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+"itemsxd": {
+"type": "grid",
+"grid_item_template": "asteroid_hud_content.itemsxd2",
+"grid_dimension_binding": "#hotbar_grid_dimensions",
+"collection_name": "hotbar_items",
+"anchor_to": "bottom_middle",
+"offset":[110,-10],
+"layer":4,
+"anchor_from": "bottom_middle",
+"size": [ "100%cm", "100%cm" ],
+"bindings": [
+{
+"binding_name": "#hotbar_grid_dimensions",
+"binding_type": "global"
+},
+{
+"binding_type":"view",
+"source_control_name":"asteroid.toggle.mod.mainhand",
+"source_property_name":"(not #toggle_state)",
+"target_property_name":"#visible"
+}
+]
+},
+
+"itemsxd2": {
+"type": "panel",
+"anchor_to": "center",
+"anchor_from": "center",
+"size": [ 0, 0 ],
+"bindings": [
+{
+"binding_name": "#slot_selected",
+"binding_name_override": "#visible",
+"binding_type": "collection",
+"binding_collection_name": "hotbar_items"
+}
+],
+"controls": [
+{
+"panel1": {
+"type": "panel",
+"size": [ 18,18],
+"controls": [
+{
+"cooldown_renderer": {
+"type": "custom",
+"renderer": "hotbar_cooldown_renderer",
+"size": [16,16 ],
+"bindings": [
+{
+"binding_collection_name": "hotbar_items",
+"binding_type": "collection_details"
+}
+]
+}
+},
+{
+"contador": {
+"type": "label",
+"layer":7,
+"anchor_to": "bottom_right",
+"anchor_from": "bottom_right",
+"font_scale_factor":0.8,
+"shadow": true,
+"text": "#inventory_stack_count",
+"max_size": [ 18,18],
+"bindings": [
+{
+"binding_name": "#inventory_stack_count",
+"binding_type": "collection",
+"binding_collection_name": "hotbar_items"
+},
+{
+"binding_name": "#stack_count_visible",
+"binding_name_override": "#visible",
+"binding_type": "collection",
+"binding_collection_name": "#hotbar_items"
+}
+]
+}
+},
+{
+"item_renderer": {
+"type": "custom",
+"renderer": "inventory_item_renderer",
+"layer": 5,
+"bindings": [
+{
+"binding_type": "collection_details",
+"binding_collection_name": "hotbar_items"
+},
+{
+"binding_name": "#item_id_aux",
+"binding_type": "collection",
+"binding_collection_name": "hotbar_items"
+},
+{
+"binding_name": "#charged_item",
+"binding_type": "collection",
+"binding_collection_name": "hotbar_items"
+},
+
+{
+"binding_name": "#item_custom_color",
+"binding_type": "collection",
+"binding_collection_name": "hotbar_items"
+},
+{
+"binding_name": "#item_pickup_time",
+"binding_type": "collection",
+"binding_collection_name": "hotbar_items"
+},
+{
+"binding_name": "#banner_patterns",
+"binding_condition": "visible",
+"binding_type": "collection"
+},
+{
+"binding_name": "#banner_colors",
+"binding_condition": "visible",
+"binding_type": "collection"
+},
+{
+"binding_name": "#banner_type",
+"binding_condition": "visible",
+"binding_type": "collection",
+"binding_collection_name": "hotbar_items"
+},
+{
+"binding_type": "collection",
+"binding_name": "#show_item",
+"binding_name_override": "#visible",
+"binding_collection_name": "hotbar_items"
+},
+{
+"binding_name": "#inactive_item",
+"binding_type": "collection",
+"binding_collection_name": "hotbar_items",
+"binding_name_override": "#disabled_filter_visible"
+},
+{
+"binding_name": "#shield_is_active",
+"binding_type": "collection",
+"binding_collection_name": "hotbar_items"
+},
+{
+"binding_name": "#item_lodestone_tracking_handle",
+"binding_condition": "visible",
+"binding_type": "collection",
+"binding_collection_name": "hotbar_items"
+}
+]
+}
+}
+]
+}
+}
+]
+},
+ 
+ 
+"asteroid_durability_percent": {
+"$valor_total": "#item_durability_total_amount" ,
+"$valor_actual": "#item_durability_current_amount" ,
+"bindings": [
+{
+"binding_name": "$valor_total" ,
+"binding_type": "collection" ,
+"binding_collection_name": "hotbar_items"
+},
+{
+"binding_name": "$valor_actual" ,
+"binding_type": "collection" ,
+"binding_collection_name": "hotbar_items"
+},
+{
+"binding_type": "view" ,
+"source_property_name": "((($valor_actual / $valor_total) > $durabilidad_minima) and (($valor_actual / $valor_total) < $durabilidad_maxima)) or (($valor_actual / $valor_total) = $durabilidad_minima)" ,
+"target_property_name": "#visible"
+}
+]
+},
+
+"durability": {
+"type": "grid" ,
+"grid_item_template": "asteroid_hud_content.view_panel" ,
+"grid_dimension_binding": "#hotbar_grid_dimensions" ,
+"collection_name": "hotbar_items" ,
+"size": [ "100%cm" , "100%cm" ],
+"offset":[115,-5],
+"layer":50,
+"anchor_from": "bottom_middle" ,
+"anchor_to": "bottom_middle" ,
+"bindings": [
+{
+"binding_name": "#hotbar_grid_dimensions" ,
+"binding_type": "global"
+},
+{
+"binding_type":"view",
+"source_control_name":"asteroid.toggle.mod.mainhand",
+"source_property_name":"(not #toggle_state)",
+"target_property_name":"#visible"
+}
+]
+},
+
+
+"view_panel": {
+"type": "image" ,
+"texture": "textures/uidx/background_ui" ,
+"bindings": [
+{
+"binding_name": "(not (#item_durability_total_amount = 0))",
+"binding_name_override": "#visible",
+"binding_type": "collection",
+"binding_collection_name": "hotbar_items"
+}
+],
+"controls": [
+{
+"@paneles_de_texto": {
+}
+}
+]
+},
+
+
+"paneles_de_texto@porcentaje_durabilidad": {
+"bindings": [
+{
+"binding_name": "#slot_selected",
+"binding_name_override": "#visible",
+"binding_type": "collection",
+"binding_collection_name": "hotbar_items"
+}
+]
+},
+"texto_de_durabilidad@asteroid_durability_percent": {
+"type": "label" ,
+"font_scale_factor":0.8,
+"color": [ 0, 1.0, 0 ],
+"text": "$texto_de_durabilidad" ,
+"shadow": true
+},
+
+"porcentaje_durabilidad": {
+"type": "panel" ,
+"controls": [
+{
+"0@texto_de_durabilidad": {
+"$texto_de_durabilidad": "0",
+"$durabilidad_minima": 0.00,
+"$durabilidad_maxima": 0.01
+}
+},
+{
+"1@texto_de_durabilidad": {
+"$texto_de_durabilidad": "1",
+"$durabilidad_minima": 0.01,
+"$durabilidad_maxima": 0.02
+}
+},
+{
+"2@texto_de_durabilidad": {
+"$texto_de_durabilidad": "2",
+"$durabilidad_minima": 0.02,
+"$durabilidad_maxima": 0.03
+}
+},
+{
+"3@texto_de_durabilidad": {
+"$texto_de_durabilidad": "3",
+"$durabilidad_minima": 0.03,
+"$durabilidad_maxima": 0.04
+}
+},
+{
+"4@texto_de_durabilidad": {
+"$texto_de_durabilidad": "4",
+"$durabilidad_minima": 0.04,
+"$durabilidad_maxima": 0.05
+}
+},
+{
+"5@texto_de_durabilidad": {
+"$texto_de_durabilidad": "5",
+"$durabilidad_minima": 0.05,
+"$durabilidad_maxima": 0.06
+}
+},
+{
+"6@texto_de_durabilidad": {
+"$texto_de_durabilidad": "6",
+"$durabilidad_minima": 0.06,
+"$durabilidad_maxima": 0.07
+}
+},
+{
+"7@texto_de_durabilidad": {
+"$texto_de_durabilidad": "7",
+"$durabilidad_minima": 0.07,
+"$durabilidad_maxima": 0.08
+}
+},
+{
+"8@texto_de_durabilidad": {
+"$texto_de_durabilidad": "8",
+"$durabilidad_minima": 0.08,
+"$durabilidad_maxima": 0.09
+}
+},
+{
+"9@texto_de_durabilidad": {
+"$texto_de_durabilidad": "9",
+"$durabilidad_minima": 0.09,
+"$durabilidad_maxima": 0.10
+}
+},
+{
+"10@texto_de_durabilidad": {
+"$texto_de_durabilidad": "10",
+"$durabilidad_minima": 0.10,
+"$durabilidad_maxima": 0.11
+}
+},
+{
+"11@texto_de_durabilidad": {
+"$texto_de_durabilidad": "11",
+"$durabilidad_minima": 0.11,
+"$durabilidad_maxima": 0.12
+}
+},
+{
+"12@texto_de_durabilidad": {
+"$texto_de_durabilidad": "12",
+"$durabilidad_minima": 0.12,
+"$durabilidad_maxima": 0.13
+}
+},
+{
+"13@texto_de_durabilidad": {
+"$texto_de_durabilidad": "13",
+"$durabilidad_minima": 0.13,
+"$durabilidad_maxima": 0.14
+}
+},
+{
+"14@texto_de_durabilidad": {
+"$texto_de_durabilidad": "14",
+"$durabilidad_minima": 0.14,
+"$durabilidad_maxima": 0.15
+}
+},
+{
+"15@texto_de_durabilidad": {
+"$texto_de_durabilidad": "15",
+"$durabilidad_minima": 0.15,
+"$durabilidad_maxima": 0.16
+}
+},
+{
+"16@texto_de_durabilidad": {
+"$texto_de_durabilidad": "16",
+"$durabilidad_minima": 0.16,
+"$durabilidad_maxima": 0.17
+}
+},
+{
+"17@texto_de_durabilidad": {
+"$texto_de_durabilidad": "17",
+"$durabilidad_minima": 0.17,
+"$durabilidad_maxima": 0.18
+}
+},
+{
+"18@texto_de_durabilidad": {
+"$texto_de_durabilidad": "18",
+"$durabilidad_minima": 0.18,
+"$durabilidad_maxima": 0.19
+}
+},
+{
+"19@texto_de_durabilidad": {
+"$texto_de_durabilidad": "19",
+"$durabilidad_minima": 0.19,
+"$durabilidad_maxima": 0.20
+}
+},
+{
+"20@texto_de_durabilidad": {
+"$texto_de_durabilidad": "20",
+"$durabilidad_minima": 0.20,
+"$durabilidad_maxima": 0.21
+}
+},
+{
+"21@texto_de_durabilidad": {
+"$texto_de_durabilidad": "21",
+"$durabilidad_minima": 0.21,
+"$durabilidad_maxima": 0.22
+}
+},
+{
+"22@texto_de_durabilidad": {
+"$texto_de_durabilidad": "22",
+"$durabilidad_minima": 0.22,
+"$durabilidad_maxima": 0.23
+}
+},
+{
+"23@texto_de_durabilidad": {
+"$texto_de_durabilidad": "23",
+"$durabilidad_minima": 0.23,
+"$durabilidad_maxima": 0.24
+}
+},
+{
+"24@texto_de_durabilidad": {
+"$texto_de_durabilidad": "24",
+"$durabilidad_minima": 0.24,
+"$durabilidad_maxima": 0.25
+}
+},
+{
+"25@texto_de_durabilidad": {
+"$texto_de_durabilidad": "25",
+"$durabilidad_minima": 0.25,
+"$durabilidad_maxima": 0.26
+}
+},
+{
+"26@texto_de_durabilidad": {
+"$texto_de_durabilidad": "26",
+"$durabilidad_minima": 0.26,
+"$durabilidad_maxima": 0.27
+}
+},
+{
+"27@texto_de_durabilidad": {
+"$texto_de_durabilidad": "27",
+"$durabilidad_minima": 0.27,
+"$durabilidad_maxima": 0.28
+}
+},
+{
+"28@texto_de_durabilidad": {
+"$texto_de_durabilidad": "28",
+"$durabilidad_minima": 0.28,
+"$durabilidad_maxima": 0.29
+}
+},
+{
+"29@texto_de_durabilidad": {
+"$texto_de_durabilidad": "29",
+"$durabilidad_minima": 0.29,
+"$durabilidad_maxima": 0.30
+}
+},
+{
+"30@texto_de_durabilidad": {
+"$texto_de_durabilidad": "30",
+"$durabilidad_minima": 0.30,
+"$durabilidad_maxima": 0.31
+}
+},
+{
+"31@texto_de_durabilidad": {
+"$texto_de_durabilidad": "31",
+"$durabilidad_minima": 0.31,
+"$durabilidad_maxima": 0.32
+}
+},
+{
+"31@texto_de_durabilidad": {
+"$texto_de_durabilidad": "31",
+"$durabilidad_minima": 0.31,
+"$durabilidad_maxima": 0.32
+}
+},
+{
+"32@texto_de_durabilidad": {
+"$texto_de_durabilidad": "32",
+"$durabilidad_minima": 0.32,
+"$durabilidad_maxima": 0.33
+}
+},
+{
+"33@texto_de_durabilidad": {
+"$texto_de_durabilidad": "33",
+"$durabilidad_minima": 0.33,
+"$durabilidad_maxima": 0.34
+}
+},
+{
+"34@texto_de_durabilidad": {
+"$texto_de_durabilidad": "34",
+"$durabilidad_minima": 0.34,
+"$durabilidad_maxima": 0.35
+}
+},
+{
+"35@texto_de_durabilidad": {
+"$texto_de_durabilidad": "35",
+"$durabilidad_minima": 0.35,
+"$durabilidad_maxima": 0.36
+}
+},
+{
+"36@texto_de_durabilidad": {
+"$texto_de_durabilidad": "36",
+"$durabilidad_minima": 0.36,
+"$durabilidad_maxima": 0.37
+}
+},
+{
+"37@texto_de_durabilidad": {
+"$texto_de_durabilidad": "37",
+"$durabilidad_minima": 0.37,
+"$durabilidad_maxima": 0.38
+}
+},
+{
+"38@texto_de_durabilidad": {
+"$texto_de_durabilidad": "38",
+"$durabilidad_minima": 0.38,
+"$durabilidad_maxima": 0.39
+}
+},
+{
+"39@texto_de_durabilidad": {
+"$texto_de_durabilidad": "39",
+"$durabilidad_minima": 0.39,
+"$durabilidad_maxima": 0.40
+}
+},
+{
+"40@texto_de_durabilidad": {
+"$texto_de_durabilidad": "40",
+"$durabilidad_minima": 0.40,
+"$durabilidad_maxima": 0.41
+}
+},
+{
+"41@texto_de_durabilidad": {
+"$texto_de_durabilidad": "41",
+"$durabilidad_minima": 0.41,
+"$durabilidad_maxima": 0.42
+}
+},
+{
+"42@texto_de_durabilidad": {
+"$texto_de_durabilidad": "42",
+"$durabilidad_minima": 0.42,
+"$durabilidad_maxima": 0.43
+}
+},
+{
+"43@texto_de_durabilidad": {
+"$texto_de_durabilidad": "43",
+"$durabilidad_minima": 0.43,
+"$durabilidad_maxima": 0.44
+}
+},
+{
+"44@texto_de_durabilidad": {
+"$texto_de_durabilidad": "44",
+"$durabilidad_minima": 0.44,
+"$durabilidad_maxima": 0.45
+}
+},
+{
+"45@texto_de_durabilidad": {
+"$texto_de_durabilidad": "45",
+"$durabilidad_minima": 0.45,
+"$durabilidad_maxima": 0.46
+}
+},
+{
+"46@texto_de_durabilidad": {
+"$texto_de_durabilidad": "46",
+"$durabilidad_minima": 0.46,
+"$durabilidad_maxima": 0.47
+}
+},
+{
+"47@texto_de_durabilidad": {
+"$texto_de_durabilidad": "47",
+"$durabilidad_minima": 0.47,
+"$durabilidad_maxima": 0.48
+}
+},
+{
+"48@texto_de_durabilidad": {
+"$texto_de_durabilidad": "48",
+"$durabilidad_minima": 0.48,
+"$durabilidad_maxima": 0.49
+}
+},
+{
+"49@texto_de_durabilidad": {
+"$texto_de_durabilidad": "49",
+"$durabilidad_minima": 0.49,
+"$durabilidad_maxima": 0.50
+}
+},
+{
+"50@texto_de_durabilidad": {
+"$texto_de_durabilidad": "50",
+"$durabilidad_minima": 0.50,
+"$durabilidad_maxima": 0.51
+}
+},
+{
+"51@texto_de_durabilidad": {
+"$texto_de_durabilidad": "51",
+"$durabilidad_minima": 0.51,
+"$durabilidad_maxima": 0.52
+}
+},
+{
+"52@texto_de_durabilidad": {
+"$texto_de_durabilidad": "52",
+"$durabilidad_minima": 0.52,
+"$durabilidad_maxima": 0.53
+}
+},
+{
+"53@texto_de_durabilidad": {
+"$texto_de_durabilidad": "53",
+"$durabilidad_minima": 0.53,
+"$durabilidad_maxima": 0.54
+}
+},
+{
+"54@texto_de_durabilidad": {
+"$texto_de_durabilidad": "54",
+"$durabilidad_minima": 0.54,
+"$durabilidad_maxima": 0.55
+}
+},
+{
+"55@texto_de_durabilidad": {
+"$texto_de_durabilidad": "55",
+"$durabilidad_minima": 0.55,
+"$durabilidad_maxima": 0.56
+}
+},
+{
+"56@texto_de_durabilidad": {
+"$texto_de_durabilidad": "56",
+"$durabilidad_minima": 0.56,
+"$durabilidad_maxima": 0.57
+}
+},
+{
+"57@texto_de_durabilidad": {
+"$texto_de_durabilidad": "57",
+"$durabilidad_minima": 0.57,
+"$durabilidad_maxima": 0.58
+}
+},
+{
+"58@texto_de_durabilidad": {
+"$texto_de_durabilidad": "58",
+"$durabilidad_minima": 0.58,
+"$durabilidad_maxima": 0.59
+}
+},
+{
+"59@texto_de_durabilidad": {
+"$texto_de_durabilidad": "59",
+"$durabilidad_minima": 0.59,
+"$durabilidad_maxima": 0.60
+}
+},
+{
+"60@texto_de_durabilidad": {
+"$texto_de_durabilidad": "60",
+"$durabilidad_minima": 0.60,
+"$durabilidad_maxima": 0.61
+}
+},
+{
+"61@texto_de_durabilidad": {
+"$texto_de_durabilidad": "61",
+"$durabilidad_minima": 0.61,
+"$durabilidad_maxima": 0.62
+}
+},
+{
+"62@texto_de_durabilidad": {
+"$texto_de_durabilidad": "62",
+"$durabilidad_minima": 0.62,
+"$durabilidad_maxima": 0.63
+}
+},
+{
+"63@texto_de_durabilidad": {
+"$texto_de_durabilidad": "63",
+"$durabilidad_minima": 0.63,
+"$durabilidad_maxima": 0.64
+}
+},
+{
+"64@texto_de_durabilidad": {
+"$texto_de_durabilidad": "64",
+"$durabilidad_minima": 0.64,
+"$durabilidad_maxima": 0.65
+}
+},
+{
+"65@texto_de_durabilidad": {
+"$texto_de_durabilidad": "65",
+"$durabilidad_minima": 0.65,
+"$durabilidad_maxima": 0.66
+}
+},
+{
+"66@texto_de_durabilidad": {
+"$texto_de_durabilidad": "66",
+"$durabilidad_minima": 0.66,
+"$durabilidad_maxima": 0.67
+}
+},
+{
+"67@texto_de_durabilidad": {
+"$texto_de_durabilidad": "67",
+"$durabilidad_minima": 0.67,
+"$durabilidad_maxima": 0.68
+}
+},
+{
+"68@texto_de_durabilidad": {
+"$texto_de_durabilidad": "68",
+"$durabilidad_minima": 0.68,
+"$durabilidad_maxima": 0.69
+}
+},
+{
+"69@texto_de_durabilidad": {
+"$texto_de_durabilidad": "69",
+"$durabilidad_minima": 0.69,
+"$durabilidad_maxima": 0.70
+}
+},
+{
+"70@texto_de_durabilidad": {
+"$texto_de_durabilidad": "70",
+"$durabilidad_minima": 0.70,
+"$durabilidad_maxima": 0.71
+}
+},
+{
+"71@texto_de_durabilidad": {
+"$texto_de_durabilidad": "71",
+"$durabilidad_minima": 0.71,
+"$durabilidad_maxima": 0.72
+}
+},
+{
+"72@texto_de_durabilidad": {
+"$texto_de_durabilidad": "72",
+"$durabilidad_minima": 0.72,
+"$durabilidad_maxima": 0.73
+}
+},
+{
+"73@texto_de_durabilidad": {
+"$texto_de_durabilidad": "73",
+"$durabilidad_minima": 0.73,
+"$durabilidad_maxima": 0.74
+}
+},
+{
+"74@texto_de_durabilidad": {
+"$texto_de_durabilidad": "74",
+"$durabilidad_minima": 0.74,
+"$durabilidad_maxima": 0.75
+}
+},
+{
+"75@texto_de_durabilidad": {
+"$texto_de_durabilidad": "75",
+"$durabilidad_minima": 0.75,
+"$durabilidad_maxima": 0.76
+}
+},
+{
+"76@texto_de_durabilidad": {
+"$texto_de_durabilidad": "76",
+"$durabilidad_minima": 0.76,
+"$durabilidad_maxima": 0.77
+}
+},
+{
+"77@texto_de_durabilidad": {
+"$texto_de_durabilidad": "77",
+"$durabilidad_minima": 0.77,
+"$durabilidad_maxima": 0.78
+}
+},
+{
+"78@texto_de_durabilidad": {
+"$texto_de_durabilidad": "78",
+"$durabilidad_minima": 0.78,
+"$durabilidad_maxima": 0.79
+}
+},
+{
+"79@texto_de_durabilidad": {
+"$texto_de_durabilidad": "79",
+"$durabilidad_minima": 0.79,
+"$durabilidad_maxima": 0.80
+}
+},
+{
+"80@texto_de_durabilidad": {
+"$texto_de_durabilidad": "80",
+"$durabilidad_minima": 0.80,
+"$durabilidad_maxima": 0.81
+}
+},
+{
+"81@texto_de_durabilidad": {
+"$texto_de_durabilidad": "81",
+"$durabilidad_minima": 0.81,
+"$durabilidad_maxima": 0.82
+}
+},
+{
+"82@texto_de_durabilidad": {
+"$texto_de_durabilidad": "82",
+"$durabilidad_minima": 0.82,
+"$durabilidad_maxima": 0.83
+}
+},
+{
+"83@texto_de_durabilidad": {
+"$texto_de_durabilidad": "83",
+"$durabilidad_minima": 0.83,
+"$durabilidad_maxima": 0.84
+}
+},
+{
+"84@texto_de_durabilidad": {
+"$texto_de_durabilidad": "84",
+"$durabilidad_minima": 0.84,
+"$durabilidad_maxima": 0.85
+}
+},
+{
+"85@texto_de_durabilidad": {
+"$texto_de_durabilidad": "85",
+"$durabilidad_minima": 0.85,
+"$durabilidad_maxima": 0.86
+}
+},
+{
+"86@texto_de_durabilidad": {
+"$texto_de_durabilidad": "86",
+"$durabilidad_minima": 0.86,
+"$durabilidad_maxima": 0.87
+}
+},
+{
+"87@texto_de_durabilidad": {
+"$texto_de_durabilidad": "87",
+"$durabilidad_minima": 0.87,
+"$durabilidad_maxima": 0.88
+}
+},
+{
+"88@texto_de_durabilidad": {
+"$texto_de_durabilidad": "88",
+"$durabilidad_minima": 0.88,
+"$durabilidad_maxima": 0.89
+}
+},
+{
+"89@texto_de_durabilidad": {
+"$texto_de_durabilidad": "89",
+"$durabilidad_minima": 0.89,
+"$durabilidad_maxima": 0.90
+}
+},
+{
+"90@texto_de_durabilidad": {
+"$texto_de_durabilidad": "90",
+"$durabilidad_minima": 0.90,
+"$durabilidad_maxima": 0.91
+}
+},
+{
+"91@texto_de_durabilidad": {
+"$texto_de_durabilidad": "91",
+"$durabilidad_minima": 0.91,
+"$durabilidad_maxima": 0.92
+}
+},
+{
+"92@texto_de_durabilidad": {
+"$texto_de_durabilidad": "92",
+"$durabilidad_minima": 0.92,
+"$durabilidad_maxima": 0.93
+}
+},
+{
+"93@texto_de_durabilidad": {
+"$texto_de_durabilidad": "93",
+"$durabilidad_minima": 0.93,
+"$durabilidad_maxima": 0.94
+}
+},
+{
+"94@texto_de_durabilidad": {
+"$texto_de_durabilidad": "94",
+"$durabilidad_minima": 0.94,
+"$durabilidad_maxima": 0.95
+}
+},
+{
+"95@texto_de_durabilidad": {
+"$texto_de_durabilidad": "95",
+"$durabilidad_minima": 0.95,
+"$durabilidad_maxima": 0.96
+}
+},
+{
+"96@texto_de_durabilidad": {
+"$texto_de_durabilidad": "96",
+"$durabilidad_minima": 0.96,
+"$durabilidad_maxima": 0.97
+}
+},
+{
+"97@texto_de_durabilidad": {
+"$texto_de_durabilidad": "97",
+"$durabilidad_minima": 0.97,
+"$durabilidad_maxima": 0.98
+}
+},
+{
+"98@texto_de_durabilidad": {
+"$texto_de_durabilidad": "98",
+"$durabilidad_minima": 0.98,
+"$durabilidad_maxima": 0.99
+}
+},
+{
+"99@texto_de_durabilidad": {
+"$texto_de_durabilidad": "99",
+"$durabilidad_minima": 0.99,
+"$durabilidad_maxima": 1.00
+}
+},
+{
+"100@texto_de_durabilidad": {
+"$texto_de_durabilidad": "100",
+"$durabilidad_minima": 1.00,
+"$durabilidad_maxima": 1.01
+}
+}
+]
+}
+}
+
+
+
+/*este codigo es propiedad de (Chixuty#0654) y (orlandes) idea/concepto por chainsketch*/

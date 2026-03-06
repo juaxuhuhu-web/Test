@@ -1,0 +1,48 @@
+{
+"format_version": "1.10.0",
+"animation_controllers": {
+"controller.animation.death_point": {
+"initial_state": "default",
+"states": {
+"default": {
+"transitions": [ { "activate": "(query.is_in_ui && !query.is_alive)" } ]
+},
+"activate": {
+"particle_effects": [ { "effect": "turtle_particle_1", "locator": "head" } ],
+"transitions": [ { "default": "query.is_emoting" } ]
+}
+}
+},
+
+"controller.animation.efepese": {
+"initial_state":"default",
+"states": {
+"default": {
+"on_entry": [ "variable.efepese_laif_taim = query.life_time;" ],
+"transitions": [ { "ctrl": "(query.life_time - variable.efepese_laif_taim) >= 0.9" }]}, 
+"ctrl": {
+"on_entry": [ 
+"variable.efepese = (0.1 / query.delta_time);" ],
+"transitions": [ { "default": "1.0" }]}}
+  
+  
+},
+    
+
+
+
+
+"controller.animation.breadcrumbs": {
+"initial_state": "default",
+"states": {
+"default": {
+"transitions": [ { "activate": "query.is_invisible" } ]
+},
+"activate": {
+"particle_effects": [ { "effect": "invisible", "locator": "head" } ],
+"transitions": [ { "default": "!query.is_invisible" } ]
+}
+}
+}
+}
+}

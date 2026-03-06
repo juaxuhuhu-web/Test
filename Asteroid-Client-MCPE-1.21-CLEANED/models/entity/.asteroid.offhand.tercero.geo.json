@@ -1,0 +1,30 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.asteroid.offhand.tercero",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 7,
+				"visible_bounds_height": 5,
+				"visible_bounds_offset": [0, 1.5, 0]
+			},
+			"bones": [
+				{
+					"name": "armortag",
+					"pivot": [0, 40, 0],
+					"cubes": [
+						{
+							"origin": [-48, 32, 0],
+							"size": [16, 16, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [16, 16]}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

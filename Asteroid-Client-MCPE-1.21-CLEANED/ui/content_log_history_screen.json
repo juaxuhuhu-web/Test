@@ -1,0 +1,70 @@
+{
+"namespace": "content_log_history",
+
+"content_log_message1": {
+
+"type": "label",
+
+"color": "$chat_text_color",
+"localize": false,
+"size": [ "100%", "default" ],
+"text": "#text",
+"shadow":true,
+"line_padding": 1,
+"font_scale_factor": 0.7,
+"bindings": [
+{
+"binding_type": "collection",
+"binding_name": "#content_log_text",
+"binding_name_override": "#text",
+"binding_collection_name": "content_log_message"
+}
+]
+},
+
+"content_log_message_panel": {
+"type": "panel",
+"size": [ "100%", "100%c" ],
+"controls": [
+{
+"content_log_message@content_log_history.content_log_message1": {
+}
+}
+]
+},
+
+
+
+
+"content_log_history_panel": {
+"type": "panel",
+"$dialog_control|default": "common_dialogs.main_panel_one_button",
+"controls": [
+{
+"content_log_history_dialog@$dialog_control": {
+"$text_name": "contentlog.history.title",
+"$child_control": "content_log_history.main_stack_panel",
+"$button_panel": "content_log_history.clipboard_button",
+"size": [ "90%", "90%" ]
+}
+}
+]
+},
+
+"content_log_history_screen@common.base_screen": {
+"$screen_bg_content": "content_log_history.background",
+"$screen_content": "content_log_history.content_log_history_panel",
+"button_mappings": [
+{
+"from_button_id": "button.menu_cancel",
+"to_button_id": "button.menu_exit",
+"mapping_type": "global"
+}
+]
+},
+
+"background":{
+"type":"image",
+"texture":"textures/uidx/background_ui"
+}
+}

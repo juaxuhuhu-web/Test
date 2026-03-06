@@ -1,0 +1,65 @@
+
+{
+"format_version": "1.8.0",
+"animations": {
+"animation.player.capereal": {
+"loop": true,
+"bones": {
+"cape": {
+"rotation": ["math.clamp(math.lerp(0, -110, query.cape_flap_amount) - (13 * query.modified_move_speed), -10, 0)", "query.modified_move_speed * math.pow(math.sin(query.body_y_rotation - query.head_y_rotation(0)), 3) * 20", 0],
+"position": [0, 0, "query.get_root_locator_offset('armor_offset.default_neck', 1)"]
+},
+"cape1": {
+"rotation": ["math.clamp(query.cape_flap_amount, 0, 0.5) * (math.cos(query.modified_distance_moved * 20) * 13)", 0, "0"]
+},
+"cape2": {
+"rotation": ["math.clamp(query.cape_flap_amount, 0, 0.5) * math.cos(22 - query.modified_distance_moved * 20) * 13", 0, 0],
+"scale": 1
+},
+"cape3": {
+"rotation": ["math.clamp(query.cape_flap_amount, 0, 0.5) * math.cos(50 - query.modified_distance_moved * 20) * 13", 0, 0]
+},
+"cape4": {
+"rotation": ["math.clamp(query.cape_flap_amount, 0, 0.5) * math.cos(76 - query.modified_distance_moved * 20) * 13", 0, 0]
+},
+"cape5": {
+"rotation": ["math.clamp(query.cape_flap_amount, 0, 0.5) * math.cos(100 - query.modified_distance_moved * 20) * 13", 0, 0]
+},
+"cape6": {
+"rotation": ["math.clamp(query.cape_flap_amount, 0, 0.5) * math.cos(122 - query.modified_distance_moved * 20) * 13", 0, 0]
+},
+"cape7": {
+"rotation": ["math.clamp(query.cape_flap_amount, 0, 0.5) * math.cos(142 - query.modified_distance_moved * 20) * 13", 0, 0]
+},
+"cape8": {
+"rotation": ["math.clamp(query.cape_flap_amount, 0, 0.5) * math.cos(160 - query.modified_distance_moved * 20) * 13", 0, 0]
+},
+"cape9": {
+"rotation": ["math.clamp(query.cape_flap_amount, 0, 0.5) * math.cos(176 - query.modified_distance_moved * 20) * 13", 0, 0]
+},
+"cape10": {
+"rotation": ["math.clamp(query.cape_flap_amount, 0, 0.5) * math.cos(190 - query.modified_distance_moved * 20) * 13", 0, 0]
+},
+"cape11": {
+"rotation": ["math.clamp(query.cape_flap_amount, 0, 0.5) * math.cos(202 - query.modified_distance_moved * 20) * 13", 0, 0]
+},
+"cape12": {
+"rotation": ["math.clamp(query.cape_flap_amount, 0, 0.5) * math.cos(212 - query.modified_distance_moved * 20) * 13", 0, 0]
+},
+"cape13": {
+"rotation": ["math.clamp(query.cape_flap_amount, 0, 0.5) * math.cos(220 - query.modified_distance_moved * 20) * 13", 0, 0]
+},
+"cape14": {
+"rotation": ["math.clamp(query.cape_flap_amount, 0, 0.5) * math.cos(226 - query.modified_distance_moved * 20) * 13", 0, 0]
+},
+"cape15": {
+"rotation": ["math.clamp(query.cape_flap_amount, 0, 0.5) * math.cos(230 - query.modified_distance_moved * 20) * 13", 0, 0]
+},
+"cape16": {
+"rotation": ["math.clamp(query.cape_flap_amount, 0, 0.5) * math.cos(232 - query.modified_distance_moved * 20) * 13", 0, 0]
+}
+}
+}
+
+
+}} 

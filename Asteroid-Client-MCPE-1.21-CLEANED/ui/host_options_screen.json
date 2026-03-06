@@ -1,0 +1,25 @@
+{
+	"namespace":"host_options",
+
+
+
+"main_light_button@common_buttons.light_content_button": {
+"$button_size|default": [ "100%", 30 ],
+"size": "$button_size",
+"offset": "$button_offset",
+"$hover_button_texture": "textures/uidx/pause_panel",
+"$pressed_button_texture": "textures/uidx/pause_panel",
+"$default_button_texture":"textures/uidx/pause_panel",
+"$button_content": "host_options.button_content"
+},
+
+"main_dark_button@common_buttons.dark_content_button": {
+"$button_size|default": [ "100%", 30 ],
+"size": "$button_size",
+"$hover_button_texture": "textures/uidx/pause_panel",
+"$pressed_button_texture": "textures/uidx/pause_panel",
+"$default_button_texture":"textures/uidx/pause_panel",
+"$button_content": "host_options.button_content",
+"$glyph_size": [ "20px", "20px" ]
+}
+}

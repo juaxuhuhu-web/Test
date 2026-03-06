@@ -1,0 +1,59 @@
+{
+"namespace": "content_log",
+
+
+
+"content_log_label1": {
+"type": "label",
+"layer": 31,
+"text": "#text",
+"size": [ "100%", "default" ],
+"shadow": true,
+"localize": false,
+"font_scale_factor":0.6,
+"color": "$chat_text_color",
+"font_type":"smooth",
+"anims": [
+"@content_log.anim_content_log_txt_wait"
+],
+"bindings": [
+{
+"binding_name": "#content_log_text",
+"binding_name_override": "#text",
+"binding_type": "collection",
+"binding_collection_name": "content_log_text_grid",
+"binding_condition": "once"
+}
+]
+},
+
+"content_log_grid_item": {
+"type": "panel",
+"layer": 1,
+"size": [ "100%-2px", "100%c" ],
+"anchor_from": "top_left",
+"anchor_to": "top_left",
+"controls": [
+{
+"content_log_background": {
+"type": "image",
+"texture": "textures/ui/Black",
+"alpha": 0.5,
+"size": [ "100%", "100%c" ],
+"anims": [
+"@content_log.anim_content_log_bg_wait"
+],
+"controls": [
+{
+"content_log_text@content_log_label1": {
+"anchor_from": "top_left",
+"anchor_to": "top_left",
+"offset": [ 2, 0 ]
+}
+}
+]
+}
+}
+]
+}
+}
