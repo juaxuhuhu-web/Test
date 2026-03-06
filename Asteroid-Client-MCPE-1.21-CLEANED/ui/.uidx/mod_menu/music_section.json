@@ -13,8 +13,8 @@
 "size":["90%",15],
 "offset":[0,70],
 "$tab_panel":"pausett.asteroid_toggle_control_section",
-"$on_texture":"textures/uidx/buttons/green2",
-"$off_texture":"textures/uidx/buttons/red2",
+"$on_texture":"textures/ui/button_hover",
+"$off_texture":"textures/ui/button_default",
 "layer":7,
 "$show_text":"Music",
 "$hide_text":"Return"
@@ -32,7 +32,7 @@
 {
 "Spotify":{
 "type":"image",
-"texture":"textures/uidx/pause_panel",
+"texture":"textures/ui/panel",
 "layer":7,
 "size":["90%",40],
 "anchor_from":"top_middle",
@@ -42,7 +42,7 @@
 {
 "logo":{
 "type":"image",
-"texture":"textures/uidx/spotify",
+"texture":"textures/ui/icon",
 "size":[12,12],
 "anchor_from":"bottom_middle",
 "anchor_to":"bottom_middle",
@@ -90,9 +90,9 @@
 "size":[35,15],
 "offset":[20,-2.5],
 "layer":15,
-"$hover_button_texture": "textures/uidx/buttons/red2",
-"$pressed_button_texture": "textures/uidx/buttons/red2",
-"$default_button_texture":"textures/uidx/buttons/red2"
+"$hover_button_texture": "textures/ui/button_default",
+"$pressed_button_texture": "textures/ui/button_default",
+"$default_button_texture":"textures/ui/button_default"
 }
 },
 
@@ -137,9 +137,9 @@
 "size":[35,15],
 "offset":[-20,-2.5],
 "layer":15,
-"$hover_button_texture": "textures/uidx/buttons/blue2",
-"$pressed_button_texture": "textures/uidx/buttons/blue2",
-"$default_button_texture":"textures/uidx/buttons/blue2"
+"$hover_button_texture": "textures/ui/button_hover",
+"$pressed_button_texture": "textures/ui/button_hover",
+"$default_button_texture":"textures/ui/button_hover"
 }
 },
 {

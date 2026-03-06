@@ -85,7 +85,7 @@
 "header":{
 "type":"image",
 "size":["100%",20],
-"texture":"textures/uidx/pause_panel",
+"texture":"textures/ui/panel",
 "controls":[
 {
 "header_label":{

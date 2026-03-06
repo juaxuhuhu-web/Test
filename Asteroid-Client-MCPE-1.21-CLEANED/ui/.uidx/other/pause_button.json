@@ -19,11 +19,11 @@
 "$button_type_panel": "pausett.asteroid_toggle_control_section_size",
 
 
-"$default_texture": "textures/uidx/pause_panel",
-"$hover_texture": "textures/uidx/buttons/green2",
-"$pressed_texture": "textures/uidx/pause_panel",
-"$pressed_no_hover_texture": "textures/uidx/buttons/green2",
-"$locked_texture": "textures/uidx/buttons/purple2",
+"$default_texture": "textures/ui/button_default",
+"$hover_texture": "textures/ui/button_hover",
+"$pressed_texture": "textures/ui/button_pressed",
+"$pressed_no_hover_texture": "textures/ui/button_pressed",
+"$locked_texture": "textures/ui/button_locked",
 
 
 "$radio_toggle_group": true,
@@ -57,11 +57,11 @@
 "size": [ "100%", "30px" ],
 "$button_size_override": [ "100%", "100% + 1px" ],
 "$button_type_panel": "pausett.asteroid_toggle_control_crosshair",
-"$default_texture": "textures/uidx/pause_panel",
-"$hover_texture": "textures/uidx/buttons/green2",
-"$pressed_texture": "textures/uidx/pause_panel",
-"$pressed_no_hover_texture": "textures/uidx/buttons/green2",
-"$locked_texture": "textures/uidx/buttons/purple2",
+"$default_texture": "textures/ui/button_default",
+"$hover_texture": "textures/ui/button_hover",
+"$pressed_texture": "textures/ui/button_pressed",
+"$pressed_no_hover_texture": "textures/ui/button_pressed",
+"$locked_texture": "textures/ui/button_locked",
 "$radio_toggle_group": true,
 "$toggle_name": "crosshair_tab",
 "$toggle_tab_focus_binding_name": "#crosshair_tab_focus_precedence",
@@ -145,11 +145,11 @@
 
 
 
-"$default_texture": "textures/uidx/buttons/cyan2",
-"$hover_texture": "textures/uidx/buttons/green2",
-"$pressed_texture": "textures/uidx/buttons/green2",
-"$pressed_no_hover_texture": "textures/uidx/buttons/green2",
-"$locked_texture": "textures/uidx/buttons/purple2",
+"$default_texture": "textures/ui/button_hover",
+"$hover_texture": "textures/ui/button_hover",
+"$pressed_texture": "textures/ui/button_hover",
+"$pressed_no_hover_texture": "textures/ui/button_hover",
+"$locked_texture": "textures/ui/button_locked",
 
 
 "$radio_toggle_group": true,
@@ -194,7 +194,7 @@
 "$t_text":"$show_text"
 },
 "toggle_off_to_on_asteroid@pausett.asteroid_toggle_image":{
-"$texture":"textures/uidx/buttons/green2",
+"$texture":"textures/ui/button_hover",
 "$t_text":"$hide_text"
 },
 

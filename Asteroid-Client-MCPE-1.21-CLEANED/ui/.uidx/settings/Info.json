@@ -2,8 +2,8 @@
 
 "info_button@settings_common.section_toggle_base": {
 "$toggle_view_binding_name": "info_button_toggle",
-"$glyph_texture": "textures/uidx/glyphs/logo1",
-"$glyph_color_texture": "textures/uidx/glyphs/logo",
+"$glyph_texture": "textures/ui/icon1",
+"$glyph_color_texture": "textures/ui/icon",
 "$glyph_size": [ 17, 17 ],
 "$button_text": "client.name",
 "$toggle_property_bag": {

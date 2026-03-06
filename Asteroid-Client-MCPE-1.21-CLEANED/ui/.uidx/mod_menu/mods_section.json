@@ -18,8 +18,8 @@
 "anchor_from":"top_middle",
 "size":["90%",15],
 "offset":[0,30],
-"$on_texture":"textures/uidx/buttons/green2",
-"$off_texture":"textures/uidx/buttons/red2",
+"$on_texture":"textures/ui/button_hover",
+"$off_texture":"textures/ui/button_default",
 "layer":7,
 "$show_text":"Modules",
 "$hide_text":"Return"
@@ -43,8 +43,8 @@
 "controls":[
 {
 "direction@pausett.asteroid_toggle_custom": {
-"$on_texture":"textures/uidx/buttons/blue2",
-"$off_texture":"textures/uidx/buttons/red2",
+"$on_texture":"textures/ui/button_hover",
+"$off_texture":"textures/ui/button_default",
 "$toggle_view_binding_name":"asteroid.toggle.mod.direction",
 "$toggle_name":"asteroid.toggle.mod.direction",
 
@@ -53,7 +53,7 @@
 "size":["100%",20],
 "offset":[0,0],
 "layer":7,
-"$mod_icon":"textures/uidx/mod_icons/direction",
+"$mod_icon":"textures/ui/icondirection",
 "$show_text":"Direction Hud",
 "$hide_text":"Direction Hud"
 }
@@ -68,8 +68,8 @@
 
 {
 "armor@pausett.asteroid_toggle_custom": {
-"$on_texture":"textures/uidx/buttons/blue2",
-"$off_texture":"textures/uidx/buttons/red2",
+"$on_texture":"textures/ui/button_hover",
+"$off_texture":"textures/ui/button_default",
 
 "$toggle_view_binding_name":"asteroid.toggle.mod.armor",
 "$toggle_name":"asteroid.toggle.mod.armor",
@@ -78,7 +78,7 @@
 "size":["100%",20],
 "layer":7,
 
-"$mod_icon":"textures/uidx/mod_icons/armorhud",
+"$mod_icon":"textures/ui/iconarmorhud",
 "$show_text":"Armor Hud",
 "$hide_text":"Armor Hud"
 }
@@ -93,14 +93,14 @@
 
 {
 "coords@pausett.asteroid_toggle_custom": {
-"$on_texture":"textures/uidx/buttons/blue2",
-"$off_texture":"textures/uidx/buttons/red2",
+"$on_texture":"textures/ui/button_hover",
+"$off_texture":"textures/ui/button_default",
 "$toggle_view_binding_name":"asteroid.toggle.mod.coordinates",
 "$toggle_name":"asteroid.toggle.mod.coordinates",
 "$toggle_default_state":"(not $coordinates)",
 "size":["100%",20],
 "layer":7,
-"$mod_icon":"textures/uidx/mod_icons/coords",
+"$mod_icon":"textures/ui/iconcoords",
 "$show_text":"Coordinates",
 "$hide_text":"Coordinates"
 }
@@ -116,8 +116,8 @@
 {
 "offhand@pausett.asteroid_toggle_custom": {
 "layer":7,
-"$on_texture":"textures/uidx/buttons/blue2",
-"$off_texture":"textures/uidx/buttons/red2",
+"$on_texture":"textures/ui/button_hover",
+"$off_texture":"textures/ui/button_default",
 "$toggle_view_binding_name":"asteroid.toggle.mod.offhand",
 "$toggle_name":"asteroid.toggle.mod.offhand",
 "$toggle_default_state":"(not $offhand)",
@@ -137,8 +137,8 @@
 
 {
 "mainhand@pausett.asteroid_toggle_custom": {
-"$on_texture":"textures/uidx/buttons/blue2",
-"$off_texture":"textures/uidx/buttons/red2",
+"$on_texture":"textures/ui/button_hover",
+"$off_texture":"textures/ui/button_default",
 "$toggle_view_binding_name":"asteroid.toggle.mod.mainhand",
 "$toggle_name":"asteroid.toggle.mod.mainhand",
 "$toggle_default_state":"(not $mainhand)",
@@ -160,14 +160,14 @@
 
 {
 "itemname@pausett.asteroid_toggle_custom": {
-"$on_texture":"textures/uidx/buttons/blue2",
-"$off_texture":"textures/uidx/buttons/red2",
+"$on_texture":"textures/ui/button_hover",
+"$off_texture":"textures/ui/button_default",
 "$toggle_default_state":"(not $itemname)",
 "$toggle_view_binding_name":"asteroid.toggle.mod.item.name",
 "$toggle_name":"asteroid.toggle.mod.item.name",
 "size":["100%",20],
 "layer":7,
-"$mod_icon":"textures/uidx/mod_icons/item",
+"$mod_icon":"textures/ui/iconitem",
 "$show_text":"Item Name",
 "$hide_text":"Item Name"
 }
@@ -181,8 +181,8 @@
 
 {
 "totemcounter@pausett.asteroid_toggle_custom": {
-"$on_texture":"textures/uidx/buttons/blue2",
-"$off_texture":"textures/uidx/buttons/red2",
+"$on_texture":"textures/ui/button_hover",
+"$off_texture":"textures/ui/button_default",
 "$toggle_view_binding_name":"asteroid.toggle.mod.totem",
 "$toggle_name":"asteroid.toggle.mod.totem",
 "$toggle_default_state":"(not $totemcounter)",
@@ -212,15 +212,15 @@
 "controls":[
 {
 "potioncounter@pausett.asteroid_toggle_custom": {
-"$on_texture":"textures/uidx/buttons/blue2",
-"$off_texture":"textures/uidx/buttons/red2",
+"$on_texture":"textures/ui/button_hover",
+"$off_texture":"textures/ui/button_default",
 "$toggle_view_binding_name":"asteroid.toggle.mod.potion",
 "$toggle_name":"asteroid.toggle.mod.potion",
 "$toggle_default_state":"(not $potioncounter)",
 "size":["100%",20],
 "offset":[0,0],
 "layer":7,
-"$mod_icon":"textures/uidx/mod_icons/mob_icons",
+"$mod_icon":"textures/ui/iconmob_icons",
 "$show_text":"Potion Hud",
 "$hide_text":"Potion Hud"
 }
@@ -236,13 +236,13 @@
 {
 "scoreboard@pausett.asteroid_toggle_custom": {
 "layer":7,
-"$on_texture":"textures/uidx/buttons/blue2",
-"$off_texture":"textures/uidx/buttons/red2",
+"$on_texture":"textures/ui/button_hover",
+"$off_texture":"textures/ui/button_default",
 "$toggle_view_binding_name":"asteroid.toggle.mod.scoreboard",
 "$toggle_name":"asteroid.toggle.mod.scoreboard",
 "size":["100%",20],
 "$toggle_default_state":"(not $scoreboard)",
-"$mod_icon":"textures/uidx/mod_icons/scoreboard",
+"$mod_icon":"textures/ui/iconscoreboard",
 "$show_text":"Scoreboard",
 "$hide_text":"Scoreboard"
 }
@@ -257,14 +257,14 @@
 
 {
 "chat@pausett.asteroid_toggle_custom": {
-"$on_texture":"textures/uidx/buttons/blue2",
-"$off_texture":"textures/uidx/buttons/red2",
+"$on_texture":"textures/ui/button_hover",
+"$off_texture":"textures/ui/button_default",
 "$toggle_view_binding_name":"asteroid.toggle.mod.chat",
 "$toggle_name":"asteroid.toggle.mod.chat",
 "size":["100%",20],
 "$toggle_default_state":"(not $chathud)",
 "layer":7,
-"$mod_icon":"textures/uidx/mod_icons/chat",
+"$mod_icon":"textures/ui/iconchat",
 "$show_text":"Chat Hud",
 "$hide_text":"Chat Hud"
 }
@@ -279,14 +279,14 @@
 
 {
 "bossbar@pausett.asteroid_toggle_custom": {
-"$on_texture":"textures/uidx/buttons/blue2",
-"$off_texture":"textures/uidx/buttons/red2",
+"$on_texture":"textures/ui/button_hover",
+"$off_texture":"textures/ui/button_default",
 "layer":7,
 "$toggle_view_binding_name":"asteroid.toggle.mod.bossbar",
 "$toggle_name":"asteroid.toggle.mod.bossbar",
 "size":["100%",20],
 "$toggle_default_state":"(not $bossbar)",
-"$mod_icon":"textures/uidx/mod_icons/bossbar",
+"$mod_icon":"textures/ui/iconbossbar",
 "$show_text":"Bossbar",
 "$hide_text":"Bossbar"
 }
@@ -301,14 +301,14 @@
 
 {
 "mobicons@pausett.asteroid_toggle_custom": {
-"$on_texture":"textures/uidx/buttons/blue2",
-"$off_texture":"textures/uidx/buttons/red2",
+"$on_texture":"textures/ui/button_hover",
+"$off_texture":"textures/ui/button_default",
 "layer":7,
 "$toggle_default_state":"(not $mobicons)",
 "$toggle_view_binding_name":"asteroid.toggle.mod.mob_icons",
 "$toggle_name":"asteroid.toggle.mod.mob_icons",
 "size":["100%",20],
-"$mod_icon":"textures/uidx/mod_icons/mob_icons",
+"$mod_icon":"textures/ui/iconmob_icons",
 "$show_text":"Mob Icons",
 "$hide_text":"Mob Icons"
 }
@@ -326,24 +326,24 @@
 "$toggle_view_binding_name":"hud_content_hide",
 "size":["100%",20],
 "layer":7,
-"$hover_button_texture": "textures/uidx/buttons/blue2",
-"$pressed_button_texture": "textures/uidx/buttons/red2",
-"$default_button_texture":"textures/uidx/buttons/blue2",
+"$hover_button_texture": "textures/ui/button_hover",
+"$pressed_button_texture": "textures/ui/button_default",
+"$default_button_texture":"textures/ui/button_hover",
 "$button_text": "Hide Gui"
 }
 },
 
 {
 "fps@pausett.asteroid_toggle_custom": {
-"$on_texture":"textures/uidx/buttons/blue2",
-"$off_texture":"textures/uidx/buttons/red2",
+"$on_texture":"textures/ui/button_hover",
+"$off_texture":"textures/ui/button_default",
 "$toggle_view_binding_name":"asteroid.toggle.mod.efepese",
 "$toggle_name":"asteroid.toggle.mod.efepese",
 "$toggle_default_state":"(not $fpscounter)",
 "size":["100%",20],
 "offset":[0,0],
 "layer":7,
-"$mod_icon":"textures/uidx/mod_icons/fps",
+"$mod_icon":"textures/ui/iconfps",
 "$show_text":"FPS Counter",
 "$hide_text":"FPS Counter"
 }

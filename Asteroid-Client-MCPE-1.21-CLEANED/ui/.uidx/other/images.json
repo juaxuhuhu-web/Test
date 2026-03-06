@@ -17,7 +17,7 @@
 "logoimage":{
 "type":"image",
 "size":[20,20],
-"texture":"textures/uidx/glyphs/logo",
+"texture":"textures/ui/icon",
 "anchor_from":"left_middle",
 "anchor_to":"left_middle"
 }

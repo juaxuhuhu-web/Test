@@ -3,8 +3,8 @@
 
 "interface_button@settings_common.section_toggle_base":{
 "$toggle_view_binding_name":"flighting_debug_button_toggle",
-"$glyph_texture":"textures/uidx/glyphs/view_glyph",
-"$glyph_color_texture":"textures/uidx/glyphs/view_glyph_color",
+"$glyph_texture":"textures/ui/icon",
+"$glyph_color_texture":"textures/ui/icon_color",
 "$glyph_size":[17,17],
 "$button_text":"Interface",
 "$toggle_property_bag":{

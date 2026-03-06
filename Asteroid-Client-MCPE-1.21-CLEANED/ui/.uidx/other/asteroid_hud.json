@@ -15,7 +15,7 @@
 {
 "mod_panel":{
 "type":"image",
-"texture":"textures/uidx/black",
+"texture":"textures/ui/black",
 "size":["70%","80%"],
 "layer":1,
 "controls":[
@@ -33,7 +33,7 @@
 "size":["30%","100%"],
 "anchor_from":"left_middle",
 "anchor_to":"left_middle",
-"texture":"textures/uidx/background_ui",
+"texture":"textures/ui/panel",
 "controls":[
 {
 "titlebg":{
@@ -42,7 +42,7 @@
 "layer":4,
 "anchor_from":"top_left",
 "anchor_to":"top_left",
-"texture":"textures/uidx/background_ui",
+"texture":"textures/ui/panel",
 "controls":[
 {
 "asteroidtext":{
@@ -89,7 +89,7 @@
 "layer":5,
 "anchor_from":"top_right",
 "anchor_to":"top_right",
-"texture":"textures/uidx/background_ui",
+"texture":"textures/ui/panel",
 "controls":[
 {
 "modulestext":{
@@ -2061,7 +2061,7 @@
 {
 "coordbg":{
 "type":"image",
-"texture":"textures/uidx/background_ui",
+"texture":"textures/ui/panel",
 "anchor_from":"bottom_left",
 "anchor_to":"bottom_left",
 "size":[65,30],
@@ -2091,7 +2091,7 @@
 {
 "pot":{
 "type":"image",
-"texture":"textures/uidx/background_ui",
+"texture":"textures/ui/panel",
 "anchor_from":"bottom_right",
 "anchor_to":"bottom_right",
 "offset":[0,0],
@@ -2127,7 +2127,7 @@
 {
 "totem":{
 "type":"image",
-"texture":"textures/uidx/background_ui",
+"texture":"textures/ui/panel",
 "anchor_from":"bottom_right",
 "anchor_to":"bottom_right",
 "offset":[0,-10],
@@ -2170,7 +2170,7 @@
 }
 ],
 "type":"image",
-"texture":"textures/uidx/background_ui",
+"texture":"textures/ui/panel",
 "anchor_from":"top_left",
 "anchor_to":"top_left",
 "layer":10,
@@ -2207,7 +2207,7 @@
 "$toggle_view_binding_name":"asteroid.show.mod.menu",
 "size":[50,18],
 "$toggle_name":"null",
-"$on_texture":"textures/uidx/buttons/blue2",
+"$on_texture":"textures/ui/button_hover",
 "$off_texture":"textures/null",
 "$hover_texture":"textures/null",
 "anchor_from":"bottom_right",
