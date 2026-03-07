@@ -1,182 +1,48 @@
 {
-"namespace":"music_section",
-
-
-
-"musictoggle@pausett.wolfclientmod_section_toggle": {
-"$toggle_group_forced_index": 2,
-"$toggle_view_binding_name":"wolfclientmod.toggle.section.music",
-"$button_text":"Music",
-"$default_selector_toggle_index":1,
-"anchor_to":"top_middle",
-"anchor_from":"top_middle",
-"size":["90%",15],
-"offset":[0,70],
-"$tab_panel":"pausett.wolfclientmod_toggle_control_section",
-"$on_texture":"textures/ui/button_hover",
-"$off_texture":"textures/ui/button_default",
-"layer":7,
-"$show_text":"Music",
-"$hide_text":"Return"
-},
-
-
-
-
-"music_panel":{
-"type":"panel",
-"size":["70%","100% - 22px"],
-"anchor_from":"bottom_right",
-"anchor_to":"bottom_right",
-"controls":[
-{
-"Spotify":{
-"type":"image",
-"texture":"textures/ui/panel",
-"layer":7,
-"size":["90%",40],
-"anchor_from":"top_middle",
-"anchor_to":"top_middle",
-"offset":[0,28],
-"controls":[
-{
-"logo":{
-"type":"image",
-"texture":"textures/ui/icon",
-"size":[12,12],
-"anchor_from":"bottom_middle",
-"anchor_to":"bottom_middle",
-"offset":[-30,-25]
-}
-},
-{
-"stop_button@common_buttons.light_text_button":{
-"$button_text": "Stop",
-"$button_font_scale_factor": 0.8,
-"$pressed_button_name": "button.stop_song",
-"sound_name": "$sound_event",
-"$sound_event":"ui.wolfclientmod",
-"sound_pitch": 1.0,
-"sound_volume": 0.00000000001,
-"button_mappings": [
-{
-"from_button_id": "button.menu_select",
-"to_button_id": "($sound_event + '.stop')",
-"mapping_type": "pressed"
-},
-{
-"from_button_id": "button.menu_secondary_select",
-"to_button_id": "($sound_event + '.stop')",
-"mapping_type": "pressed"
-},
-{
-"from_button_id": "button.menu_ok",
-"to_button_id": "($sound_event + '.stop')",
-"mapping_type": "pressed"
-},
-{
-"from_button_id": "button.controller_select",
-"to_button_id": "($sound_event + '.stop')",
-"mapping_type": "pressed"
-},
-{
-"from_button_id": "button.controller_secondary_select",
-"to_button_id": "($sound_event + '.stop')",
-"mapping_type": "pressed"
-}
-],
-"anchor_from":"bottom_middle",
-"anchor_to":"bottom_middle",
-"size":[35,15],
-"offset":[20,-2.5],
-"layer":15,
-"$hover_button_texture": "textures/ui/button_default",
-"$pressed_button_texture": "textures/ui/button_default",
-"$default_button_texture":"textures/ui/button_default"
-}
-},
-
-{
-"play_button@common_buttons.light_text_button":{
-"$button_text": "Play",
-"$pressed_button_name": "button.play_song",
-"sound_name": "$sound_event",
-"$sound_event":"ui.wolfclientmod",
-"$button_font_scale_factor":0.8,
-"sound_pitch": 1.0,
-"sound_volume": 1,
-"button_mappings": [
-{
-"from_button_id": "button.menu_select",
-"to_button_id": "$sound_event",
-"mapping_type": "pressed"
-},
-{
-"from_button_id": "button.menu_secondary_select",
-"to_button_id": "$sound_event",
-"mapping_type": "pressed"
-},
-{
-"from_button_id": "button.menu_ok",
-"to_button_id": "$sound_event",
-"mapping_type": "pressed"
-},
-{
-"from_button_id": "button.controller_select",
-"to_button_id": "$sound_event",
-"mapping_type": "pressed"
-},
-{
-"from_button_id": "button.controller_secondary_select",
-"to_button_id": "$sound_event",
-"mapping_type": "pressed"
-}
-],
-"anchor_from":"bottom_middle",
-"anchor_to":"bottom_middle",
-"size":[35,15],
-"offset":[-20,-2.5],
-"layer":15,
-"$hover_button_texture": "textures/ui/button_hover",
-"$pressed_button_texture": "textures/ui/button_hover",
-"$default_button_texture":"textures/ui/button_hover"
-}
-},
-{
-"ateroidname":{
-"type":"label",
-"text":"Wolf Client Mod Client - Music",
-"font_scale_factor":0.6,
-"anchor_from":"bottom_middle",
-"anchor_to":"bottom_middle",
-"offset":[0,-17]
-
-}
-},
-{
-"ateroidname2":{
-"type":"label",
-"text":"Play Now",
-"font_scale_factor":0.6,
-"anchor_from":"bottom_middle",
-"anchor_to":"bottom_middle",
-"offset":[0,-26]
-
-}
-}
-]
-}
-}
-
-
-],
-"bindings":[
-{
-"binding_type":"view",
-"source_control_name":"wolfclientmod.toggle.section.music",
-"source_property_name":"#toggle_state",
-"target_property_name":"#visible"
-}
-]
-}
+  "namespace": "music_section",
+  "music_panel": {
+    "type": "stack_panel",
+    "size": ["100%", "100%"],
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "controls": [
+      {
+        "music_toggle@pausett.wolfclientmod_toggle_custom_center": {
+          "$toggle_view_binding_name": "wolfclientmod.toggle.music.enabled",
+          "$on_texture": "textures/ui/button_hover",
+          "$off_texture": "textures/ui/button_default",
+          "size": ["90%", "40px"],
+          "$show_text": "Music: ON",
+          "$hide_text": "Music: OFF"
+        }
+      },
+      {
+        "music_volume_low@pausett.wolfclientmod_section_toggle": {
+          "$toggle_view_binding_name": "wolfclientmod.music.volume.low",
+          "$button_text": "Low Volume",
+          "size": ["90%", "40px"],
+          "$on_texture": "textures/ui/button_hover",
+          "$off_texture": "textures/ui/button_default"
+        }
+      },
+      {
+        "music_volume_medium@pausett.wolfclientmod_section_toggle": {
+          "$toggle_view_binding_name": "wolfclientmod.music.volume.medium",
+          "$button_text": "Medium Volume",
+          "size": ["90%", "40px"],
+          "$on_texture": "textures/ui/button_hover",
+          "$off_texture": "textures/ui/button_default"
+        }
+      },
+      {
+        "music_volume_high@pausett.wolfclientmod_section_toggle": {
+          "$toggle_view_binding_name": "wolfclientmod.music.volume.high",
+          "$button_text": "High Volume",
+          "size": ["90%", "40px"],
+          "$on_texture": "textures/ui/button_hover",
+          "$off_texture": "textures/ui/button_default"
+        }
+      }
+    ]
+  }
 }

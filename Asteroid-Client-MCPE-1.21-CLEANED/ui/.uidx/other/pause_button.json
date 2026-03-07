@@ -1,361 +1,108 @@
-
-
-
 {
-"namespace":"pausett",
-
-
-
-"yellow_border":{
-  "type":"image",
-  "texture":"textures/ui/White",
-  "color":[1,1,0]
-},
-
-
-"wolfclientmod_section_toggle_size@common_toggles.light_ui_toggle": {
-"size": [ "33%", "100%"],
-"$button_size_override": [ "100%", "100% + 1px" ],
-"$button_type_panel": "pausett.wolfclientmod_toggle_control_section_size",
-
-
-"$default_texture": "textures/ui/button_default",
-"$hover_texture": "textures/ui/button_hover",
-"$pressed_texture": "textures/ui/button_pressed",
-"$pressed_no_hover_texture": "textures/ui/button_pressed",
-"$locked_texture": "textures/ui/button_locked",
-
-
-"$radio_toggle_group": true,
-"$toggle_name": "size_crosshair",
-"$toggle_group_default_selected": "$default_crosshair_size",
-"$toggle_tab_focus_binding_type": "global",
-"$toggle_tab_focus_binding_name": "#size_crosshair_focus_precedence",
-"$toggle_on_hover_binding_type": "global",
-"$toggle_on_hover_binding_name": "#toggle_on_hover"
-},
-
-"wolfclientmod_toggle_control_section_size": {
-
-"type": "panel",
-"layer": 2,
-"controls": [
-{
-"tab_button_text": {
-"type": "label",
-"shadow":true,
-"text": "$button_text",
-"layer": 3
-}
-}
-]
-},
-
-"wolfclientmod_section_toggle_crosshair@common_toggles.light_ui_toggle": {
-"anchor_from": "top_left",
-"anchor_to": "top_left",
-"size": [ "100%", "30px" ],
-"$button_size_override": [ "100%", "100% + 1px" ],
-"$button_type_panel": "pausett.wolfclientmod_toggle_control_crosshair",
-"$default_texture": "textures/ui/button_default",
-"$hover_texture": "textures/ui/button_hover",
-"$pressed_texture": "textures/ui/button_pressed",
-"$pressed_no_hover_texture": "textures/ui/button_pressed",
-"$locked_texture": "textures/ui/button_locked",
-"$radio_toggle_group": true,
-"$toggle_name": "crosshair_tab",
-"$toggle_tab_focus_binding_name": "#crosshair_tab_focus_precedence",
-"$toggle_group_default_selected": "$default_crosshair",
-"$toggle_tab_focus_binding_type": "global",
-"$toggle_on_hover_binding_type": "global",
-"$toggle_on_hover_binding_name": "#toggle_on_hover"
-},
-
-"wolfclientmod_toggle_control_crosshair":{
-"type":"panel",
-"controls":[
-{
-"image":{
-"type":"image",
-"texture":"$mod_icon",
-"size":[15,15],
-"offset":[0,0],
-"color":[1,1,1],
-"layer":101,
-"$mod_icon | default":"textures/null"
-}
-}
-]
-},
-
-
-"wolfclientmod_section_toggle_crosshair_image@common_toggles.light_ui_toggle": {
-"anchor_from": "top_left",
-"anchor_to": "top_left",
-"$button_size_override": [ "100%", "100% + 1px" ],
-"$button_type_panel": "pausett.wolfclientmod_toggle_control_crosshair_image",
-
-"$default_texture": "textures/null",
-"$hover_texture": "textures/null",
-"$pressed_texture": "textures/null",
-"$pressed_no_hover_texture": "textures/null",
-"$locked_texture": "textures/null",
-
-
-"$radio_toggle_group": true,
-"$toggle_name": "crosshair_image_tab",
-"$toggle_group_default_selected": 1,
-
-"$toggle_tab_focus_binding_type": "global",
-"$toggle_tab_focus_binding_name": "#crosshair_image_tab_focus_precedence",
-"$toggle_on_hover_binding_type": "global",
-"$toggle_on_hover_binding_name": "#toggle_on_hover"
-},
-
-"wolfclientmod_toggle_control_crosshair_image":{
-"type":"panel",
-"controls":[
-{
-"toggle_label":{
-"type":"label",
-"layer":101,
-"shadow":true,
-"anchor_from":"top_right",
-"offset":[-3,3],
-"anchor_to":"top_right",
-"text":""
-}
-}
-]
-	
-},
-
-
-
-
-
-
-"wolfclientmod_section_toggle@common_toggles.light_ui_toggle": {
-"anchor_from": "top_left",
-"anchor_to": "top_left",
-"size": [ "100%", "30px" ],
-"$button_size_override": [ "100%", "100% + 1px" ],
-"$button_type_panel": "pausett.wolfclientmod_toggle_control_section",
-
-
-
-
-"$default_texture": "textures/ui/button_hover",
-"$hover_texture": "textures/ui/button_hover",
-"$pressed_texture": "textures/ui/button_hover",
-"$pressed_no_hover_texture": "textures/ui/button_hover",
-"$locked_texture": "textures/ui/button_locked",
-
-
-"$radio_toggle_group": true,
-"$toggle_name": "mod_tab",
-"$toggle_group_default_selected": 1,
-
-"$toggle_tab_focus_binding_type": "global",
-"$toggle_tab_focus_binding_name": "#mod_tab_focus_precedence",
-"$toggle_on_hover_binding_type": "global",
-"$toggle_on_hover_binding_name": "#toggle_on_hover"
-},
-
-"wolfclientmod_toggle_control_section": {
-"type": "panel",
-"layer": 2,
-"controls": [
-{
-"tab_button_text": {
-"type": "label",
-"shadow":true,
-"text": "$button_text",
-"layer": 3
-}
-}
-]
-},
-
-
-
-
-
-"toggle_on_wolfclientmod@pausett.wolfclientmod_toggle_image":{
-"$texture":"$on_texture",
-"$t_text":"$show_text"
-},
-"toggle_off_wolfclientmod@pausett.wolfclientmod_toggle_image":{
-"$texture":"$off_texture",
-"$t_text":"$hide_text"
-},
-"toggle_on_to_off_wolfclientmod@pausett.wolfclientmod_toggle_image":{
-"$texture":"$off_texture",
-"$t_text":"$show_text"
-},
-"toggle_off_to_on_wolfclientmod@pausett.wolfclientmod_toggle_image":{
-"$texture":"textures/ui/button_hover",
-"$t_text":"$hide_text"
-},
-
-
-
-
-
-"wolfclientmod_button_press@common.toggle":{
-"$checked_control":"pausett.toggle_off_wolfclientmod",
-"$unchecked_control":"pausett.toggle_on_wolfclientmod",
-
-
-"$unchecked_locked_control":"pausett.toggle_on_wolfclientmod",
-"$checked_locked_control":"pausett.toggle_off_wolfclientmod",
-
-
-"$unchecked_locked_hover_control":"pausett.toggle_on_to_off_wolfclientmod",
-"$checked_locked_hover_control":"pausett.toggle_off_to_on_wolfclientmod",
-
-"$unchecked_hover_control":"pausett.toggle_on_to_off_wolfclientmod",
-"$checked_hover_control":"pausett.toggle_off_to_on_wolfclientmod"
-
-},
-
-
-
-"wolfclientmod_toggle_custom":{
-"type":"panel",
-"$toggle_view_binding_name":"this_toggle",
-"$template_toggle|default":"pausett.wolfclientmod_button_press",
-"controls":[
-{
-"$toggle_view_binding_name@$template_toggle":{}
-}
-]
-},
-
-
-
-"wolfclientmod_toggle_image":{
-"type":"image",
-"texture":"$texture",
-"$default|default":false,
-"$hover|default":false,
-"$pressed|default":false,
-"controls":[
-{
-"panel":{
-"type":"panel",
-"size":["100%","100%"],
-"controls":[
-{
-"toggle_label":{
-"type":"label",
-"layer":101,
-"shadow":true,
-"anchor_from":"top_right",
-"offset":[-3,3],
-"anchor_to":"top_right",
-"text":"$t_text"
-}
-},
-{
-"image":{
-"type":"image",
-"texture":"$mod_icon",
-"size":[15,15],
-"offset":[5,0],
-"color":[1,1,1],
-"layer":101,
-"$mod_icon | default":"textures/null",
-"anchor_from":"left_middle",
-"anchor_to":"left_middle"
-}
-}
-]
-}
-}
-]
-},
-
-
-
-
-
-
-"toggle_on_wolfclientmod_center@pausett.wolfclientmod_toggle_image_center":{
-"$default|default":true,
-"$texture":"$on_texture",
-"$t_text":"$show_text"
-},
-"toggle_off_wolfclientmod_center@pausett.wolfclientmod_toggle_image_center":{
-"$pressed|default":true,
-"$texture":"$off_texture",
-"$t_text":"$hide_text"
-},
-"toggle_on_to_off_wolfclientmod_center@pausett.wolfclientmod_toggle_image_center":{
-"$hover|default":true,
-"$texture":"$on_texture",
-"$t_text":"$show_text"
-},
-"toggle_off_to_on_wolfclientmod_center@pausett.wolfclientmod_toggle_image_center":{
-"$hover|default":true,
-"$texture":"$off_texture",
-"$t_text":"$hide_text"
-},
-
-"wolfclientmod_button_press_center@common.toggle":{
-"$unchecked_locked_control|default":"pausett.toggle_on_wolfclientmod_center",
-"$unchecked_locked_hover_control|default":"pausett.toggle_off_wolfclientmod_center",
-"$checked_locked_control|default":"pausett.toggle_off_wolfclientmod_center",
-"$checked_locked_hover_control|default":"pausett.toggle_off_wolfclientmod_center",
-"$unchecked_control|default":"pausett.toggle_on_wolfclientmod_center",
-"$checked_control|default":"pausett.toggle_off_wolfclientmod_center",
-"$unchecked_hover_control|default":"pausett.toggle_on_to_off_wolfclientmod_center",
-"$checked_hover_control|default":"pausett.toggle_off_to_on_wolfclientmod_center"
-},
-
-"wolfclientmod_toggle_image_center":{
-"type":"image",
-"texture":"$texture",
-"$default|default":false,
-"$hover|default":false,
-"$pressed|default":false,
-"controls":[
-{
-"toggle_label":{
-"type":"label",
-"layer":101,
-"shadow":true,
-"text":"$t_text"
-}
-}
-]
-},
-
-"wolfclientmod_toggle_custom_center":{
-"type":"panel",
-"$toggle_view_binding_name":"this_toggle",
-"$template_toggle|default":"pausett.wolfclientmod_button_press_center",
-"controls":[
-{
-"$toggle_view_binding_name@$template_toggle":{}
-}
-]
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  "namespace": "pausett",
+  "wolfclientmod_section_toggle@common_toggles.light_ui_toggle": {
+    "size": ["100%", "30px"],
+    "$button_size_override": ["100%", "100% + 1px"],
+    "$button_type_panel": "pausett.wolfclientmod_toggle_control_section",
+    "$default_texture": "textures/ui/button_default",
+    "$hover_texture": "textures/ui/button_hover",
+    "$pressed_texture": "textures/ui/button_pressed",
+    "$pressed_no_hover_texture": "textures/ui/button_pressed",
+    "$locked_texture": "textures/ui/button_locked",
+    "$radio_toggle_group": true,
+    "$toggle_name": "mod_section",
+    "$toggle_group_default_selected": 1,
+    "$toggle_tab_focus_binding_type": "global",
+    "$toggle_tab_focus_binding_name": "#mod_tab_focus_precedence",
+    "$toggle_on_hover_binding_type": "global",
+    "$toggle_on_hover_binding_name": "#toggle_on_hover"
+  },
+  "wolfclientmod_toggle_control_section": {
+    "type": "panel",
+    "layer": 2,
+    "controls": [
+      {
+        "tab_button_text": {
+          "type": "label",
+          "shadow": true,
+          "text": "$button_text",
+          "layer": 3
+        }
+      }
+    ]
+  },
+  "wolfclientmod_toggle_custom_center": {
+    "type": "panel",
+    "$toggle_view_binding_name": "this_toggle",
+    "$template_toggle|default": "pausett.wolfclientmod_button_press_center",
+    "controls": [
+      {
+        "$toggle_view_binding_name@$template_toggle": {}
+      }
+    ]
+  },
+  "wolfclientmod_button_press_center@common.toggle": {
+    "$unchecked_control|default": "pausett.toggle_on_wolfclientmod_center",
+    "$checked_control|default": "pausett.toggle_off_wolfclientmod_center",
+    "$unchecked_hover_control|default": "pausett.toggle_on_to_off_wolfclientmod_center",
+    "$checked_hover_control|default": "pausett.toggle_off_to_on_wolfclientmod_center"
+  },
+  "toggle_on_wolfclientmod_center": {
+    "type": "image",
+    "texture": "$on_texture",
+    "controls": [
+      {
+        "toggle_label": {
+          "type": "label",
+          "layer": 101,
+          "shadow": true,
+          "text": "$show_text"
+        }
+      }
+    ]
+  },
+  "toggle_off_wolfclientmod_center": {
+    "type": "image",
+    "texture": "$off_texture",
+    "controls": [
+      {
+        "toggle_label": {
+          "type": "label",
+          "layer": 101,
+          "shadow": true,
+          "text": "$hide_text"
+        }
+      }
+    ]
+  },
+  "toggle_on_to_off_wolfclientmod_center": {
+    "type": "image",
+    "texture": "$on_texture",
+    "controls": [
+      {
+        "toggle_label": {
+          "type": "label",
+          "layer": 101,
+          "shadow": true,
+          "text": "$show_text"
+        }
+      }
+    ]
+  },
+  "toggle_off_to_on_wolfclientmod_center": {
+    "type": "image",
+    "texture": "$off_texture",
+    "controls": [
+      {
+        "toggle_label": {
+          "type": "label",
+          "layer": 101,
+          "shadow": true,
+          "text": "$hide_text"
+        }
+      }
+    ]
+  }
 }
 
 

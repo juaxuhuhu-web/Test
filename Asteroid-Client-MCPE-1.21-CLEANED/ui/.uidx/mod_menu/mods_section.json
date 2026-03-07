@@ -1,367 +1,71 @@
 {
-"namespace":"m_section",
-
-
-
-
-
-
-
-
-
-"modulestoggle@pausett.wolfclientmod_section_toggle": {
-"$toggle_view_binding_name":"wolfclientmod.toggle.section.modules",
-"$toggle_group_forced_index":1,
-"$default_selector_toggle_index":1,
-"$button_text":"Modules", 
-"anchor_to":"top_middle",
-"anchor_from":"top_middle",
-"size":["90%",15],
-"offset":[0,30],
-"$on_texture":"textures/ui/button_hover",
-"$off_texture":"textures/ui/button_default",
-"layer":7,
-"$show_text":"Modules",
-"$hide_text":"Return"
-},
-
-"modules_panel":{
-"type":"panel",
-"layer":5,
-"size": [ "70%", "100% -22px" ],
-"anchor_from":"bottom_right",
-"anchor_to":"bottom_right",
-"controls":[
-{
-"stackleft":{
-"type":"stack_panel",
-"size":["46%","100%"],
-"offset":[5,0],
-"layer":6,
-"anchor_to":"bottom_left",
-"anchor_from":"bottom_left",
-"controls":[
-{
-"direction@pausett.wolfclientmod_toggle_custom": {
-"$on_texture":"textures/ui/button_hover",
-"$off_texture":"textures/ui/button_default",
-"$toggle_view_binding_name":"wolfclientmod.toggle.mod.direction",
-"$toggle_name":"wolfclientmod.toggle.mod.direction",
-
-"$toggle_default_state":"(not $directionhud)",
-
-"size":["100%",20],
-"offset":[0,0],
-"layer":7,
-"$mod_icon":"textures/ui/icondirection",
-"$show_text":"Direction Hud",
-"$hide_text":"Direction Hud"
-}
-},
-
-{
-"spacer":{
-"type":"panel",
-"size":[0,2]
-}
-},
-
-{
-"armor@pausett.wolfclientmod_toggle_custom": {
-"$on_texture":"textures/ui/button_hover",
-"$off_texture":"textures/ui/button_default",
-
-"$toggle_view_binding_name":"wolfclientmod.toggle.mod.armor",
-"$toggle_name":"wolfclientmod.toggle.mod.armor",
-"$toggle_default_state":"(not $armorhud)",
-
-"size":["100%",20],
-"layer":7,
-
-"$mod_icon":"textures/ui/iconarmorhud",
-"$show_text":"Armor Hud",
-"$hide_text":"Armor Hud"
-}
-},
-
-{
-"spacer1":{
-"type":"panel",
-"size":[0,2]
-}
-},
-
-{
-"coords@pausett.wolfclientmod_toggle_custom": {
-"$on_texture":"textures/ui/button_hover",
-"$off_texture":"textures/ui/button_default",
-"$toggle_view_binding_name":"wolfclientmod.toggle.mod.coordinates",
-"$toggle_name":"wolfclientmod.toggle.mod.coordinates",
-"$toggle_default_state":"(not $coordinates)",
-"size":["100%",20],
-"layer":7,
-"$mod_icon":"textures/ui/iconcoords",
-"$show_text":"Coordinates",
-"$hide_text":"Coordinates"
-}
-},
-
-{
-"spacer2":{
-"type":"panel",
-"size":[0,2]
-}
-},
-
-{
-"offhand@pausett.wolfclientmod_toggle_custom": {
-"layer":7,
-"$on_texture":"textures/ui/button_hover",
-"$off_texture":"textures/ui/button_default",
-"$toggle_view_binding_name":"wolfclientmod.toggle.mod.offhand",
-"$toggle_name":"wolfclientmod.toggle.mod.offhand",
-"$toggle_default_state":"(not $offhand)",
-"size":["100%",20],
-"$mod_icon":"textures/items/totem",
-"$show_text":"Offhand Hud",
-"$hide_text":"Offhand Hud"
-}
-},
-
-{
-"spacer3":{
-"type":"panel",
-"size":[0,2]
-}
-},
-
-{
-"mainhand@pausett.wolfclientmod_toggle_custom": {
-"$on_texture":"textures/ui/button_hover",
-"$off_texture":"textures/ui/button_default",
-"$toggle_view_binding_name":"wolfclientmod.toggle.mod.mainhand",
-"$toggle_name":"wolfclientmod.toggle.mod.mainhand",
-"$toggle_default_state":"(not $mainhand)",
-"size":["100%",20],
-"layer":7,
-"$mod_icon":"textures/items/diamond_sword",
-"$show_text":"Mainhand Hud",
-"$hide_text":"Mainhand Hud"
-}
-},
-
-{
-"spacer4":{
-"type":"panel",
-"size":[0,2]
-}
-},
-
-
-{
-"itemname@pausett.wolfclientmod_toggle_custom": {
-"$on_texture":"textures/ui/button_hover",
-"$off_texture":"textures/ui/button_default",
-"$toggle_default_state":"(not $itemname)",
-"$toggle_view_binding_name":"wolfclientmod.toggle.mod.item.name",
-"$toggle_name":"wolfclientmod.toggle.mod.item.name",
-"size":["100%",20],
-"layer":7,
-"$mod_icon":"textures/ui/iconitem",
-"$show_text":"Item Name",
-"$hide_text":"Item Name"
-}
-},
-{
-"spacer5":{
-"type":"panel",
-"size":[0,2]
-}
-},
-
-{
-"totemcounter@pausett.wolfclientmod_toggle_custom": {
-"$on_texture":"textures/ui/button_hover",
-"$off_texture":"textures/ui/button_default",
-"$toggle_view_binding_name":"wolfclientmod.toggle.mod.totem",
-"$toggle_name":"wolfclientmod.toggle.mod.totem",
-"$toggle_default_state":"(not $totemcounter)",
-"size":["100%",20],
-"layer":7,
-"$mod_icon":"textures/items/totem",
-"$show_text":"Totem Counter",
-"$hide_text":"Totem Counter"
-}
-
-
-
-}
-]
-}
-},
-
-
-{
-"stackright":{
-"type":"stack_panel",
-"size":["46%","100%"],
-"offset":[-5,0],
-"layer":6,
-"anchor_to":"bottom_right",
-"anchor_from":"bottom_right",
-"controls":[
-{
-"potioncounter@pausett.wolfclientmod_toggle_custom": {
-"$on_texture":"textures/ui/button_hover",
-"$off_texture":"textures/ui/button_default",
-"$toggle_view_binding_name":"wolfclientmod.toggle.mod.potion",
-"$toggle_name":"wolfclientmod.toggle.mod.potion",
-"$toggle_default_state":"(not $potioncounter)",
-"size":["100%",20],
-"offset":[0,0],
-"layer":7,
-"$mod_icon":"textures/ui/iconmob_icons",
-"$show_text":"Potion Hud",
-"$hide_text":"Potion Hud"
-}
-},
-
-{
-"spacer":{
-"type":"panel",
-"size":[0,2]
-}
-},
-
-{
-"scoreboard@pausett.wolfclientmod_toggle_custom": {
-"layer":7,
-"$on_texture":"textures/ui/button_hover",
-"$off_texture":"textures/ui/button_default",
-"$toggle_view_binding_name":"wolfclientmod.toggle.mod.scoreboard",
-"$toggle_name":"wolfclientmod.toggle.mod.scoreboard",
-"size":["100%",20],
-"$toggle_default_state":"(not $scoreboard)",
-"$mod_icon":"textures/ui/iconscoreboard",
-"$show_text":"Scoreboard",
-"$hide_text":"Scoreboard"
-}
-},
-
-{
-"spacer1":{
-"type":"panel",
-"size":[0,2]
-}
-},
-
-{
-"chat@pausett.wolfclientmod_toggle_custom": {
-"$on_texture":"textures/ui/button_hover",
-"$off_texture":"textures/ui/button_default",
-"$toggle_view_binding_name":"wolfclientmod.toggle.mod.chat",
-"$toggle_name":"wolfclientmod.toggle.mod.chat",
-"size":["100%",20],
-"$toggle_default_state":"(not $chathud)",
-"layer":7,
-"$mod_icon":"textures/ui/iconchat",
-"$show_text":"Chat Hud",
-"$hide_text":"Chat Hud"
-}
-},
-
-{
-"spacer2":{
-"type":"panel",
-"size":[0,2]
-}
-},
-
-{
-"bossbar@pausett.wolfclientmod_toggle_custom": {
-"$on_texture":"textures/ui/button_hover",
-"$off_texture":"textures/ui/button_default",
-"layer":7,
-"$toggle_view_binding_name":"wolfclientmod.toggle.mod.bossbar",
-"$toggle_name":"wolfclientmod.toggle.mod.bossbar",
-"size":["100%",20],
-"$toggle_default_state":"(not $bossbar)",
-"$mod_icon":"textures/ui/iconbossbar",
-"$show_text":"Bossbar",
-"$hide_text":"Bossbar"
-}
-},
-
-{
-"spacer3":{
-"type":"panel",
-"size":[0,2]
-}
-},
-
-{
-"mobicons@pausett.wolfclientmod_toggle_custom": {
-"$on_texture":"textures/ui/button_hover",
-"$off_texture":"textures/ui/button_default",
-"layer":7,
-"$toggle_default_state":"(not $mobicons)",
-"$toggle_view_binding_name":"wolfclientmod.toggle.mod.mob_icons",
-"$toggle_name":"wolfclientmod.toggle.mod.mob_icons",
-"size":["100%",20],
-"$mod_icon":"textures/ui/iconmob_icons",
-"$show_text":"Mob Icons",
-"$hide_text":"Mob Icons"
-}
-},
-
-{
-"spacer4":{
-"type":"panel",
-"size":[0,2]
-}
-},
-{
-"hide_button@common_buttons.light_text_button": {
-"$pressed_button_name": "button.hide_gui_all",
-"$toggle_view_binding_name":"hud_content_hide",
-"size":["100%",20],
-"layer":7,
-"$hover_button_texture": "textures/ui/button_hover",
-"$pressed_button_texture": "textures/ui/button_default",
-"$default_button_texture":"textures/ui/button_hover",
-"$button_text": "Hide Gui"
-}
-},
-
-{
-"fps@pausett.wolfclientmod_toggle_custom": {
-"$on_texture":"textures/ui/button_hover",
-"$off_texture":"textures/ui/button_default",
-"$toggle_view_binding_name":"wolfclientmod.toggle.mod.efepese",
-"$toggle_name":"wolfclientmod.toggle.mod.efepese",
-"$toggle_default_state":"(not $fpscounter)",
-"size":["100%",20],
-"offset":[0,0],
-"layer":7,
-"$mod_icon":"textures/ui/iconfps",
-"$show_text":"FPS Counter",
-"$hide_text":"FPS Counter"
-}
-}
-
-
-
-]
-}
-}
-],
-"bindings":[
-{
-"binding_type":"view",
-"source_control_name":"wolfclientmod.toggle.section.modules",
-"source_property_name":"#toggle_state",
-"target_property_name":"#visible"
-}
-]
-}
+  "namespace": "m_section",
+  "modules_panel": {
+    "type": "stack_panel",
+    "size": ["100%", "100%"],
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "controls": [
+      {
+        "direction_toggle@pausett.wolfclientmod_toggle_custom_center": {
+          "$toggle_view_binding_name": "wolfclientmod.toggle.mod.direction",
+          "$on_texture": "textures/ui/button_hover",
+          "$off_texture": "textures/ui/button_default",
+          "size": ["90%", "40px"],
+          "$show_text": "Direction Hud: ON",
+          "$hide_text": "Direction Hud: OFF"
+        }
+      },
+      {
+        "armor_toggle@pausett.wolfclientmod_toggle_custom_center": {
+          "$toggle_view_binding_name": "wolfclientmod.toggle.mod.armor",
+          "$on_texture": "textures/ui/button_hover",
+          "$off_texture": "textures/ui/button_default",
+          "size": ["90%", "40px"],
+          "$show_text": "Armor Hud: ON",
+          "$hide_text": "Armor Hud: OFF"
+        }
+      },
+      {
+        "offhand_toggle@pausett.wolfclientmod_toggle_custom_center": {
+          "$toggle_view_binding_name": "wolfclientmod.toggle.mod.offhand",
+          "$on_texture": "textures/ui/button_hover",
+          "$off_texture": "textures/ui/button_default",
+          "size": ["90%", "40px"],
+          "$show_text": "Offhand Hud: ON",
+          "$hide_text": "Offhand Hud: OFF"
+        }
+      },
+      {
+        "mainhand_toggle@pausett.wolfclientmod_toggle_custom_center": {
+          "$toggle_view_binding_name": "wolfclientmod.toggle.mod.mainhand",
+          "$on_texture": "textures/ui/button_hover",
+          "$off_texture": "textures/ui/button_default",
+          "size": ["90%", "40px"],
+          "$show_text": "Mainhand Hud: ON",
+          "$hide_text": "Mainhand Hud: OFF"
+        }
+      },
+      {
+        "potion_toggle@pausett.wolfclientmod_toggle_custom_center": {
+          "$toggle_view_binding_name": "wolfclientmod.toggle.mod.potion",
+          "$on_texture": "textures/ui/button_hover",
+          "$off_texture": "textures/ui/button_default",
+          "size": ["90%", "40px"],
+          "$show_text": "Potion Hud: ON",
+          "$hide_text": "Potion Hud: OFF"
+        }
+      },
+      {
+        "chat_toggle@pausett.wolfclientmod_toggle_custom_center": {
+          "$toggle_view_binding_name": "wolfclientmod.toggle.mod.chat",
+          "$on_texture": "textures/ui/button_hover",
+          "$off_texture": "textures/ui/button_default",
+          "size": ["90%", "40px"],
+          "$show_text": "Chat Hud: ON",
+          "$hide_text": "Chat Hud: OFF"
+        }
+      }
+    ]
+  }
 }
