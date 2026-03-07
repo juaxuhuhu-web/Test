@@ -22,5 +22,6 @@
   "wolfclientmod.toggle.drawable.0": false,
   "wolfclientmod.toggle.drawable.1": false,
   "wolfclientmod.toggle.drawable.2": false,
-  "wolfclientmod.toggle.drawable.3": false
+  "wolfclientmod.toggle.drawable.3": false,
+  "automation_button_toggle": false
 }
