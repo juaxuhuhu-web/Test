@@ -7,10 +7,10 @@
         "operation": "insert_after",
         "where_below": "settings_header",
         "value": {
-          "mods_section@mods.mods_section": {
+          "wolfclientmod_settings@mods.mods_section": {
             "anchor_from": "top_left",
             "anchor_to": "top_left",
-            "offset": [0, 50]
+            "offset": [0, 60]
           }
         }
       }

@@ -9,12 +9,13 @@
         "value": {
           "wolfclientmod_info": {
             "type": "label",
-            "text": "Mod Menu: Press MODS button during gameplay",
+            "text": "Wolf Client Mod: Use MODS button during gameplay",
             "anchor_from": "bottom_center",
             "anchor_to": "bottom_center",
-            "offset": [0, -20],
-            "color": [1, 1, 1],
-            "shadow": true
+            "offset": [0, -30],
+            "color": [0, 1, 0],
+            "shadow": true,
+            "font_size": "small"
           }
         }
       }
