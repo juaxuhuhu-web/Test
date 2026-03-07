@@ -1,0 +1,22 @@
+{
+  "namespace": "host_screen",
+  "host_screen": {
+    "modifications": [
+      {
+        "array_name": "controls",
+        "operation": "insert_after",
+        "where_below": "host_options_panel",
+        "value": {
+          "wolfclientmod_host_info": {
+            "type": "label",
+            "text": "Wolf Client Mod Active",
+            "anchor_from": "bottom_left",
+            "anchor_to": "bottom_left",
+            "offset": [10, -10],
+            "color": [0, 1, 0]
+          }
+        }
+      }
+    ]
+  }
+}

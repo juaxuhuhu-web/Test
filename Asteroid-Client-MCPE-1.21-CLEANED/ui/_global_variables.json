@@ -1,0 +1,10 @@
+{
+  "namespace": "_global_variables",
+  "variables": {
+    "safe_zone_size": [0, 0],
+    "text_safe_zone_size": [0, 0],
+    "hud_safe_zone_size": [0, 0],
+    "wolfclientmod_active": true,
+    "wolfclientmod_version": "1.21"
+  }
+}

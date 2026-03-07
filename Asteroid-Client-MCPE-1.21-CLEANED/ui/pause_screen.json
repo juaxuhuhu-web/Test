@@ -1,0 +1,23 @@
+{
+  "namespace": "pause_screen",
+  "pause_screen": {
+    "modifications": [
+      {
+        "array_name": "controls",
+        "operation": "insert_after",
+        "where_below": "pause_menu_panel",
+        "value": {
+          "wolfclientmod_info": {
+            "type": "label",
+            "text": "Mod Menu: Press MODS button during gameplay",
+            "anchor_from": "bottom_center",
+            "anchor_to": "bottom_center",
+            "offset": [0, -20],
+            "color": [1, 1, 1],
+            "shadow": true
+          }
+        }
+      }
+    ]
+  }
+}
