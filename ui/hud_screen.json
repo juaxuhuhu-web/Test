@@ -1,0 +1,51 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:ui_screen": {
+    "description": {
+      "identifier": "hud_screen",
+      "allow_legacy_ui_layout": true,
+      "ignore_pause_menu": true
+    },
+    "variables": {
+      "$mod_menu_open": false
+    },
+    "components": {
+      "hud_panel": {
+        "type": "panel",
+        "anchor": "bottom_right",
+        "position": [-10, -10],
+        "children": {
+          "settings_button": {
+            "type": "button",
+            "name": "settings_button",
+            "text": "Settings",
+            "texture": "textures/ui/mod_button.png",
+            "size": [32, 32],
+            "pressed_button_name": "toggle_mod_menu",
+            "on_pressed": [
+              {
+                "set_variable": {
+                  "name": "$mod_menu_open",
+                  "value": "toggle"
+                }
+              }
+            ],
+            "anchors": "bottom_right"
+          }
+        }
+      },
+      "mod_menu_overlay": {
+        "type": "panel",
+        "name": "mod_menu_overlay",
+        "anchor": "center",
+        "visible": "$mod_menu_open",
+        "children": {
+          "menu_content": {
+            "type": "screen_template",
+            "screen_name": "mod_menu"
+          }
+        }
+      }
+    }
+  }
+}

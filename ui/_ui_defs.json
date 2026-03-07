@@ -1,0 +1,17 @@
+{
+  "format_version": "1.8.0",
+  "ui_definition": {
+    "name": "mod_menu_pack",
+    "version": [1, 0, 0],
+    "screens": [
+      {
+        "name": "hud_screen",
+        "file": "ui/hud_screen.json"
+      },
+      {
+        "name": "mod_menu",
+        "file": "ui/mod_menu.json"
+      }
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "description": {
+    "identifier": "custom:ui_materials",
+    "materials": [
+      {
+        "name": "ui_blur",
+        "properties": {
+          "render_method": "particle_cutout",
+          "texture": "textures/ui/blur_bg.png",
+          "blend_mode": "alpha",
+          "shader": "ui/blur"
+        }
+      }
+    ]
+  }
+}

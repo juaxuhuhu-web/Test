@@ -1,0 +1,198 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:ui_screen": {
+    "description": {
+      "identifier": "custom:mod_menu",
+      "ignore_pause_menu": true
+    },
+    "variables": {
+      "$fps_visible": false,
+      "$cps_visible": false,
+      "$offhand_visible": false,
+      "$armor_visible": false,
+      "$reach_visible": false
+    },
+    "components": {
+
+      "background_blur": {
+        "type": "image",
+        "texture": "textures/ui/blur_bg.png",
+        "anchor": "center",
+        "size": [480, 270]
+      },
+      "menu_panel": {
+        "type": "stack_panel",
+        "anchor": "center",
+        "orientation": "vertical",
+        "spacing": 8,
+        "background_texture": "textures/ui/panel_bg.png",
+        "size": [320, 260],
+        "children": {
+          "title": {
+            "type": "text",
+            "anchor": "top_center",
+            "position": [0, 8],
+            "text": "Mod Menu",
+            "scale": 1.5,
+            "color": [0.0, 1.0, 1.0, 1.0]
+          },
+          "toggle_fps": {
+            "type": "button",
+            "text": "FPS",
+            "size": [120, 24],
+            "anchor": "top_center",
+            "texture": "textures/ui/toggle_off.png",
+            "on_pressed": [
+              {"set_variable": {"name": "$fps_visible", "value": "toggle"}},
+              {"update_texture": {"target": "toggle_fps", "texture": "textures/ui/toggle_on.png", "when": "$fps_visible"}}
+            ]
+          },
+          "toggle_cps": {
+            "type": "button",
+            "text": "CPS",
+            "size": [120, 24],
+            "anchor": "top_center",
+            "texture": "textures/ui/toggle_off.png",
+            "on_pressed": [
+              {"set_variable": {"name": "$cps_visible", "value": "toggle"}},
+              {"update_texture": {"target": "toggle_cps", "texture": "textures/ui/toggle_on.png", "when": "$cps_visible"}}
+            ]
+          },
+          "toggle_offhand": {
+            "type": "button",
+            "text": "Offhand",
+            "size": [120, 24],
+            "anchor": "top_center",
+            "texture": "textures/ui/toggle_off.png",
+            "on_pressed": [
+              {"set_variable": {"name": "$offhand_visible", "value": "toggle"}},
+              {"update_texture": {"target": "toggle_offhand", "texture": "textures/ui/toggle_on.png", "when": "$offhand_visible"}}
+            ]
+          },
+          "toggle_armor": {
+            "type": "button",
+            "text": "Armor Durability",
+            "size": [120, 24],
+            "anchor": "top_center",
+            "texture": "textures/ui/toggle_off.png",
+            "on_pressed": [
+              {"set_variable": {"name": "$armor_visible", "value": "toggle"}},
+              {"update_texture": {"target": "toggle_armor", "texture": "textures/ui/toggle_on.png", "when": "$armor_visible"}}
+            ]
+          },
+          "toggle_reach": {
+            "type": "button",
+            "text": "Reach",
+            "size": [120, 24],
+            "anchor": "top_center",
+            "texture": "textures/ui/toggle_off.png",
+            "on_pressed": [
+              {"set_variable": {"name": "$reach_visible", "value": "toggle"}},
+              {"update_texture": {"target": "toggle_reach", "texture": "textures/ui/toggle_on.png", "when": "$reach_visible"}}
+            ]
+          }
+        }
+      },
+      "fps_text": {
+        "type": "text",
+        "anchor": "top_left",
+        "position": [10, 10],
+        "text": "#fps_text",
+        "visible": "$fps_visible",
+        "color": [0.0, 1.0, 1.0, 1.0]
+      },
+      "cps_text": {
+        "type": "text",
+        "anchor": "top_left",
+        "position": [10, 32],
+        "text": "CPS: 0",
+        "visible": "$cps_visible",
+        "color": [1.0, 1.0, 1.0, 1.0]
+      },
+      "offhand_display": {
+        "type": "item_slot",
+        "slot_id": "offhand",
+        "anchor": "bottom_left",
+        "position": [10, -10],
+        "visible": "$offhand_visible",
+        "size": [24, 24]
+      },
+      "armor_panel": {
+        "type": "panel",
+        "anchor": "bottom_right",
+        "position": [-10, -10],
+        "visible": "$armor_visible",
+        "children": {
+          "helmet": {
+            "type": "item_slot",
+            "slot_id": "helmet",
+            "size": [24, 24]
+          },
+          "helmet_dur": {
+            "type": "text",
+            "text": "#armor_helmet_durability",
+            "position": [26, 0],
+            "scale": 0.8,
+            "color": [1.0, 1.0, 1.0, 1.0]
+          },
+          "chestplate": {
+            "type": "item_slot",
+            "slot_id": "chestplate",
+            "size": [24, 24],
+            "position": [0, 26]
+          },
+          "chestplate_dur": {
+            "type": "text",
+            "text": "#armor_chestplate_durability",
+            "position": [26, 26],
+            "scale": 0.8,
+            "color": [1.0, 1.0, 1.0, 1.0]
+          },
+          "leggings": {
+            "type": "item_slot",
+            "slot_id": "leggings",
+            "size": [24, 24],
+            "position": [0, 52]
+          },
+          "leggings_dur": {
+            "type": "text",
+            "text": "#armor_leggings_durability",
+            "position": [26, 52],
+            "scale": 0.8,
+            "color": [1.0, 1.0, 1.0, 1.0]
+          },
+          "boots": {
+            "type": "item_slot",
+            "slot_id": "boots",
+            "size": [24, 24],
+            "position": [0, 78]
+          },
+          "boots_dur": {
+            "type": "text",
+            "text": "#armor_boots_durability",
+            "position": [26, 78],
+            "scale": 0.8,
+            "color": [1.0, 1.0, 1.0, 1.0]
+          }
+        }
+      },
+      "reach_display": {
+        "type": "text",
+        "anchor": "top_center",
+        "position": [0, 60],
+        "text": "Reach: 3.0",
+        "visible": "$reach_visible",
+        "color": [1.0, 1.0, 1.0, 1.0]
+      }
+    }
+  },
+  "animations": {
+    "cps_update": {
+      "loop": true,
+      "frames": [
+        {"duration": 0.5, "component": "cps_text", "text": "CPS: 0"}
+      ]
+    }
+  }
+}
+
